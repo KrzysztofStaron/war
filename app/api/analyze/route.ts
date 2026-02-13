@@ -164,7 +164,7 @@ export async function POST(request: Request) {
   const tools = buildTools(company.websiteUrl || undefined);
 
   const payload = {
-    model: "grok-4-fast",
+    model: "grok-4-1-fast-reasoning",
     input: [
       {
         role: "developer",
