@@ -1,7 +1,7 @@
 interface UploadedFile {
   name: string;
   size: number;
-  path: string;
+  fileId: string;
 }
 
 function formatFileSize(bytes: number): string {
@@ -44,6 +44,12 @@ export function FileCard({ file }: { file: UploadedFile }) {
         </p>
         <p className="mt-0.5 font-mono text-[11px] text-foreground/35">
           {formatFileSize(file.size)}
+        </p>
+        <p
+          className="mt-1 truncate font-mono text-[10px] text-foreground/25"
+          title={file.fileId}
+        >
+          {file.fileId}
         </p>
       </div>
     </div>

@@ -1,0 +1,1356 @@
+PART IV
+FEDERAL SUPPLY 
+CLASS ASSIGNMENTS
+FEDERAL SUPPLY CLASS (FSC) ASSIGNMENTS TO DLA/GSA FOR 
+INTEGRATED MANAGEMENT 
+Each item in the Federal Supply System is assigned to a specific Source of Supply (SOS) for 
+management. The following FSCs indicate that either DLA or GSA has been designated as the 
+integrated materiel manager at the wholesale level for one or more consumable items of supply 
+in the FSC. Source of supply must be determined for individual NSNs to route 
+MILSTRIP/FEDSTRIP documents or obtain information on that specific item. Source of supply 
+is contained in the Consolidated Management Data List (ML-C Basic) available through your 
+service/agency publication point. Telephone numbers for the sources of supply are provided at 
+Part I of this handbook. Table 1 is a list of FSC assignments to DLA/GSA sorted by FSC. Table 
+2 is a list of FSC assignments to DLA/GSA sorted alphabetically by description. 
+Table 1 
+FEDERAL SUPPLY CLASS (FSC) ASSIGNMENTS TO DLA/GSA 
+FSC LISTING 
+FSC DESCRIPTION RIC /ACTY 
+CODE 
+1005 Guns, thru 30 mm S9C/AX 
+1010 Guns, over 30 mm to 75 mm S9C/AX 
+1015 Guns, 75 mm - 125 mm S9C/AX 
+1020 Guns, over 125 mm - 150 mm S9C/AX 
+1025 Guns, over 150 mm - 200 mm S9C/AX 
+1030 Guns, over 200 mm - 300 mm S9C/AX 
+1035 Guns, over 300 mm S9C/AX 
+1040 Chemical Weapons & Equipment S9C/AX 
+1045 Launchers, Torpedoes & Depth Charge S9C/AX 
+1055 Launchers, Grenade, Rocket and Pyrotechnic S9C/AX 
+1075 Degaussing and Mine Sweep Equipment S9C/AX 
+1080 Camouflage and Deception Equipment S9C/AX 
+1090 Assemblies Interchangeable Between Weapons in 2 or More Classes S9C/AX 
+1095 Miscellaneous Weapons S9C/AX 
+1210 Fire Control Directors S9E/TX 
+1220 Fire Control Computing Sights and Devices S9E/TX 
+1240 Optical Sight and Range Equipment S9E/TX 
+1250 Fire Control Stabilizing Mechanisms S9E/TX 
+1260 Fire Control Designating and Indicating Equipment S9E/TX 
+IV-1 
+FSC DESCRIPTION RIC /ACTY 
+CODE 
+1265 Fire Control Transmitting and Receiving Equipment, Except Airborne S9E/TX 
+1270 Aircraft Gunnery Fire Control Components S9G/CX 
+1280 Aircraft Bombing Fire Control Components S9G/CX 
+1285 Fire Control Radar Equipment, Except Airborne S9E/TX 
+1287 Fire Control Sonar Equipment S9E/TX 
+1290 Miscellaneous Fire Control Equipment S9E/TX 
+1420 Guided Missile Components S9E/TX 
+1430 Guided Missile Remote Control Systems S9E/TX 
+1440 Launchers, Guided Missile S9E/TX 
+1450 Guided Missile Handling and Servicing Equipment S9C/AX 
+1560 Airframe Structural Components S9G/CX 
+1610 Aircraft Propellers S9G/CX 
+1615 Helicopter Rotor Blades, Drive Mechanisms and Components S9G/CX 
+1620 Aircraft Landing Gear Components S9G/CX 
+1630 Aircraft Wheel and Brake Systems S9G/CX 
+1650 Aircraft Hydraulic, Vacuum and De-icing System Components S9G/CX 
+1660 Aircraft Air Conditioning, Heat and Pressurizing Equipment S9G/CX 
+1670 Parachutes; Aerial Pick Up, Delivery, Recovery Systems; and Cargo Tie Down 
+Equipment S9G/CX 
+1680 Miscellaneous Aircraft Accessories and Components S9G/CX 
+1710 Aircraft Arrest, Barrier and Barricade Equipment S9C/AX 
+1720 Aircraft Launching Equipment S9C/AX 
+1730 Aircraft Ground Servicing Equipment S9G/CX 
+1740 Airfield Specialized Trucks and Trails S9C/AX 
+1820 Space Vehicle Components S9G/CX 
+1830 Space Vehicle Remote Control Systems S9G/CX 
+1840 Space Vehicle Launchers S9G/CX 
+1850 Space Vehicle Handling and Servicing Equipment S9G/CX 
+1860 Space Survival Equipment S9G/CX 
+2010 Ship and Boat Propulsion Components S9C/AX 
+IV-2 
+FSC DESCRIPTION RIC /ACTY 
+CODE 
+2020 Rigging and Rigging Gear S9C/AX 
+2030 Deck Machinery S9C/AX 
+2040 Marine Hardware and Hull Items S9C/AX 
+2050 Buoys S9C/AX 
+2060 Commercial Fishing Equipment S9C/AX 
+2090 Miscellaneous Ship Marine Equipment S9C/AX 
+2230 Right-of-Way Construction and Maintenance Equipment, Railroad S9I/KZ 
+2240 Locomotive and Rail Car Access and Components S9I/KZ 
+2250 Track Materials, Railroad S9I/KZ 
+2310 Passenger Motor Vehicles FAA/75 
+2320 Trucks and Truck Tractors, Wheeled FAA/75 
+2330 Trailers FAA/75 
+2340 Motorcycles, Motor Scooters, and Bicycles FAA/75 
+2410 Tractors, Full Track, Low Speed S9I/KZ 
+2420 Tractors, Wheeled S9I/KZ 
+2430 Tractors, Track Laying High Speed S9I/KZ 
+2510 Vehicle Cab, Body and Frame Structural Components S9C/AX 
+2520 Vehicle Power Transmission Components S9C/AX 
+2530 Vehicle Brake, Steer Axle, Wheel and Track Components S9C/AX 
+2540 Vehicle Furniture and Accessories S9C/AX 
+2541 Weapon Systems Specific Vehicular Accessories S9C/AX 
+2590 Miscellaneous Vehicle Components S9C/AX 
+2620 Tires and Tubes, Pneumatic, Aircraft S9G/CX 
+2805 Gas Reciprocating Engine and Components, Except Aircraft S9C/AX 
+2810 Gas Reciprocating Engine and Components, Aircraft S9G/CX 
+2815 Diesel Engine and Components S9C/AX 
+2820 Steam Engine, Reciprocating, and Components S9C/AX 
+2825 Steam Turbines and Components S9C/AX 
+2830 Water Turbines and Wheels, and Components S9I/KZ 
+IV-3 
+FSC DESCRIPTION RIC /ACTY 
+CODE 
+2835 Gas Turbines, Jet Engine and Components, Except Aircraft S9G/CX 
+2840 Gas Turbines, Jet Engine and Components, Aircraft S9G/CX 
+2845 Rocket Engine and Components S9G/CX 
+2850 Gas Rotary Engine and Components S9I/KZ 
+2895 Miscellaneous Engine and Components S9C/AX 
+2910 Engine Fuel Systems Components, Except Aircraft S9C/AX 
+2915 Engine Fuel Systems Components, Aircraft S9G/CX 
+2920 Engine Electrical Systems Components, Except Aircraft S9C/AX 
+2925 Engine Electrical Systems Components, Aircraft S9G/CX 
+2930 Engine Cooling Systems Components, Except Aircraft S9C/AX 
+2935 Engine Cooling Systems Components, Aircraft S9G/CX 
+2940 Engine Air and Oil Filters, Strainers and Cleaners, Except Aircraft S9C/AX 
+2945 Engine Air and Oil Filters, Strainers and Cleaners, Aircraft S9G/CX 
+2950 TurboSupercharger S9G/CX 
+2990 Miscellaneous Engine Accessories, Except Aircraft S9C/AX 
+2995 Miscellaneous Engine Accessories, Aircraft S9G/CX 
+3010 Torque Converters and Speed Changers S9C/AX 
+3020 Gears, Pulleys, Sprockets, and Transmission Chain S9C/AX 
+3030 Belting, Drive Belts, Fan Belts, and Accessories S9I/KZ 
+3040 Miscellaneous Power Trans Equipment S9C/AX 
+3110 Bearings, Anti-friction, Unmounted S9G/CX 
+3120 Bearings, Plain, Unmounted S9G/CX 
+3130 Bearings, Mounted S9G/CX 
+3210 Sawmill and Planing Mill Machinery S9I/KZ 
+3220 Woodworking Machine S9I/KZ 
+3230 Tools and Attachments for Woodworking Machine S9I/KZ 
+3405 Saws and Filing Machine S9G/CX 
+3408 Machining Centers and Way-Type Machine S9G/CX 
+3410 Electric and Ultrasonic Erosion Machine S9G/CX 
+IV-4 
+FSC DESCRIPTION RIC /ACTY 
+CODE 
+3411 Boring Machine S9G/CX 
+3412 Broaching Machine S9G/CX 
+3413 Drilling and Tapping Machine S9G/CX 
+3414 Gear Cutting and Finishing Machines S9G/CX 
+3415 Grinding Machine S9G/CX 
+3416 Lathes S9G/CX 
+3417 Milling Machine S9G/CX 
+3418 Planers and Shapers S9G/CX 
+3419 Machines, Tools Miscellaneous S9G/CX 
+3422 Rolling Mills and Drawing Machines S9G/CX 
+3424 Metal Heat Treat and Non-Thermal Treat Equipment S9G/CX 
+3426 Metal Finishing Equipment S9G/CX 
+3431 Elect Arc Welding Equipment S9G/CX 
+3432 Elect Resistance Welding Equipment S9G/CX 
+3433 Gas Welding, Heat Cutting, and Metalizing Equipment S9G/CX 
+3436 Welding Positioners and Manipulators S9C/AX 
+3438 Miscellaneous Welding Equipment S9G/CX 
+3439 Miscellaneous Welding, Soldering and Brazing Supplies and Accessories S9G/CX 
+3441 Bending and Forming Machinery S9C/AX 
+3442 Hydraulic and Pneumatic Presses, Power Driven S9G/CX 
+3443 Mechanisms Presses, Power Driven S9G/CX 
+3444 Manual Presses S9G/CX 
+3445 Punching and Shearing Machinery S9G/CX 
+3446 Forging Machines and Hammers S9G/CX 
+3447 Wire and Metal Ribbon Form Machinery S9G/CX 
+3448 Riveting Machinery S9G/CX 
+3449 Miscellaneous Secondary Metal Forming and Cutting Machinery S9G/CX 
+3450 Machinery Tools, Portable S9G/CX
+3455 Cutting Tools for Machinery Tools S9G/CX
+IV-5 
+FSC DESCRIPTION RIC /ACTY 
+CODE 
+3456 Cutting and Forming Tools for Secondary Metalworking Machinery S9G/CX
+3460 Machine Tool Accessories S9G/CX
+3461 Accessories for Secondary Metalworking Machinery S9G/CX
+3465 Production Jigs, Fixtures and Templates S9G/CX
+3470 Machine Shop Sets, Kits and Outfits S9G/CX
+3510 Laundry and Dry Cleaning Equipment S9I/KZ
+3520 Shoe Repairing Equipment S9I/KZ
+3530 Industrial Sew Mach and Mobile Textile Repair Shops S9I/KZ
+3540 Wrapping and Packaging Machines** 7FX/75 
+3550 Vending and Coin Operating Machines** 7FX/75
+3590 Miscellaneous Service and Trade Equipment 7FX/75
+3605 Food Products Machinery and Equipment S9G/CX
+3610 Print, Duplicating, and Bookbinding Equipment S9G/CX
+3611 Industrial Marking Machinery S9G/CX
+3615 Pulp and Paper Industries Machinery S9G/CX
+3620 Rubber and Plastics Working Machinery S9G/CX
+3625 Textile Industries Machinery S9G/CX
+3630 Clay and Concrete Industries Machinery S9G/CX
+3635 Crystal and Glass Industries Machinery S9G/CX
+3640 Tobacco Manufacturing Machinery S9G/CX
+3645 Leather Tanning and Leather Working Machinery S9G/CX
+3650 Chemical and Pharmaceutical Manufacturing Machinery S9G/CX
+3655 Gas Generating and Dispensing Systems Fixed or Mobile S9G/CX
+3660 Industrial Size Reduction Machinery S9G/CX
+3670 Specialized Semiconductor, Microcircuit and Printed Circuit Board 
+Manufacturing Machinery S9G/CX
+3680 Foundry Mach, Related Equipment and Supplies S9G/CX
+3685 Specialized Metal Container Manufacturing Machinery and Related Equipment S9G/CX
+3690 Specialized Ammo and Ordnance Machinery and Related Equipment S9G/CX
+3693 Industrial Assembly Machinery S9G/CX
+IV-6 
+FSC DESCRIPTION RIC /ACTY 
+CODE 
+3694 Clean Work Stations, Control Environment and Related Equipment S9G/CX
+3695 Miscellaneous Specialized Industry Machinery S9G/CX
+3710 Soil Preparation Equipment S9I/KZ
+3720 Harvesting Equipment S9I/KZ
+3730 Dairy, Poultry, Livestock Equipment S9I/KZ
+3740 Pest, Disease, Frost Control Equipment S9G/CX
+3750 Gardening Implements and Tools 6FE/75 
+3770 Saddlery, Harness, Whips, Related Animal Furnishings S9I/KZ
+3805 Earth Moving and Excavating Equipment S9I/KZ
+3810 Cranes and Crane Shovels S9I/KZ
+3815 Crane and Crane Shovel Attachments S9I/KZ
+3820 Mining, Rock Drilling, Earth Boring, Related Equipment S9I/KZ
+3825 Road Clearing and Cleaning Equipment S9I/KZ
+3830 Truck and Tractor Attachment S9I/KZ
+3835 Petroleum Production and Distribution Equipment S9I/KZ
+3895 Miscellaneous Construction Equipment S9I/KZ
+3910 Conveyors S9I/KZ
+3915 Materials Feeders S9I/KZ
+3920 Materials Handling Equipment, Nonself-Propelled S9I/KZ
+3930 Warehouse Trucks and Tractors, Self-Propelled S9I/KZ
+3940 Block, Tackle, Rigging, Sling S9I/KZ
+3950 Winch, Hoist, Crane, Derrick S9C/AX
+3960 Elevators and Escalators S9C/AX
+3990 Miscellaneous Materials Handling Equipment S9I/KZ
+4010 Chain and Wire Rope S9G/CX
+4020 Fiber Rope, Cordage, Twine S9I/KZ
+4030 Fitting for Rope, Cable, Chain S9C/AX
+4110 Refrigeration Equipment S9I/KZ
+4120 Air Conditioning Equipment S9I/KZ
+IV-7 
+FSC DESCRIPTION RIC /ACTY 
+CODE 
+4130 Refrigeration and Air Conditioning Components S9I/KZ
+4140 Fans, Air Circulators and Blower Equipment S9I/KZ
+4150 Vortex Tubes and Other Related Cooling Tubes S9G/CX
+4210 Fire Fighting Equipment S9I/KZ
+4220 Marine Lifesaving and Diving Equipment S9I/KZ
+4230 Decontaminating and Impregnating Equipment S9I/KZ
+4235 Hazardous Material Spill Containment Cleanup Equipment and Material S9G/CX
+4240 Safety and Rescue Equipment S9I/KZ
+4250 Recycling and Reclamation Equipment S9G/CX
+4310 Compressors and Vacuum Pumps S9C/AX
+4320 Power and Hand Pumps S9C/AX
+4330 Centrifugal, Separators, and Pressure and Vacuum Filters S9C/AX
+4410 Industrial Boilers S9C/AX
+4420 Heat Exchange and Steam Condensers S9C/AX
+4430 Industrial Furnaces, Kilns, Lehrs and Ovens S9I/KZ
+4440 Dryer, Dehydrators, Anhydrators S9C/AX
+4460 Air Purification Equipment S9C/AX
+4510 Plumbing Fixtures and Accessories S9I/KZ
+4520 Space Heat Equipment, Domestic Water Heater S9I/KZ
+4530 Fuel Burning Equipment Units S9I/KZ
+4540 Miscellaneous Plumbing, Heat and Sanitation Equipment S9I/KZ
+4610 Water Purification Equipment S9C/AX
+4620 Water Distillation Equipment, Marine and Industrial S9C/AX
+4630 Sewage Treatment Equipment S9I/KZ
+4710 Pipe and Tube S9C/AX
+4720 Hose and Tubing, Flexible S9C/AX
+4730 Fittings and Specialties; Hose, Pipe and Tube S9C/AX
+4810 Valves, Powered S9C/AX
+4820 Valves, Nonpowered S9C/AX
+IV-8 
+FSC DESCRIPTION RIC /ACTY 
+CODE 
+4910 Motor Vehicle Maintenance and Rep Shop Specialized Equipment S9C/AX
+4920 Aircraft Maintenance and Rep Shop Specialized Equipment S9G/CX
+4921 Torpedoes Maintenance, Rep, and Checkout Specialized Equipment S9C/AX
+4923 Depth Charges and Underwater Mines Maintenance, Rep and Checkout S9C/AX
+4925 Ammo Maintenance, Rep and Checkout Specialized Equipment S9G/CX
+4927 Rocket Maintenance, Rep and Checkout Specialized Equipment S9G/CX
+4930 Lubrication and Fuel Dispensing Equipment S9I/KZ
+4931 Fire Control Maintenance and Rep Shop Specialized Equipment S9G/CX
+4933 Weapons Maintenance and Rep Shop Specialized Equipment S9G/CX
+4935 Guided Missile Maintenance, Rep and Checkout Specialized Equipment S9G/CX
+4940 Miscellaneous Maintenance and Rep Shop Specialized Equipment S9C/AX
+4960 Space Vehicle Maintenance, Rep and Checkout Specialized Equipment S9G/CX
+4970 Multiple Guided Weapons, Specialized Maintenance and Repair Shop 
+Equipment S9G/CX 
+5110 Hand Tools, Edged, Nonpowered 6FE/75
+5120 Hand Tools, Non-edged, Non-powered 6FE/75
+5130 Hand Tools, Power Driven 6FE/75
+5133 Drill Bits, Counterbores and Countersinks; Hand and Mach 6FE/75
+5136 Taps, Dies, Collets, Hand and Machine 6FE/75
+5140 Tool and Hardware Boxes 6FE/75
+5180 Specialized Equipments, Kits, Outfits/Hand Tools 6FE/75
+5210 Measuring Tools, Craftsmen's** 6FE/75
+5220 Inspection Gage and Precision Layout Tools S9I/KZ
+5280 Sets, kits and Outfits of Measuring Tools S9I/KZ
+5305 Screws S9I/KZ
+5306 Bolts S9I/KZ
+5307 Studs S9I/KZ
+5310 Nuts and Washers S9I/KZ
+5315 Nails, Machine Keys and Pins S9I/KZ
+5320 Rivets S9I/KZ
+IV-9 
+FSC DESCRIPTION RIC /ACTY 
+CODE 
+5325 Fastening Devices S9I/KZ
+5330 Packing and Gasket Materials S9I/KZ
+5331 O-Rings S9I/KZ 
+5335 Metal Screening S9I/KZ
+5340 Hardware, Commercial S9I/KZ 
+5341 Brackets S9I/KZ
+5342 Hardware, Weapon System S9G/CX
+5345 Disks and Stones, Abrasive** 7FX/75
+5350 Abrasive Materials** 7FX/75
+5355 Knobs and Pointers S9I/KZ
+5360 Coil, Flat and Wire Springs S9I/KZ
+5365 Bushings, Rings, Shims and Spacers S9G/CX
+5410 Prefabricated Portable Buildings S9I/KZ
+5411 Rigid Wall Shelters S9I/KZ
+5419 Collective Modular Support System S9C/AX
+5420 Bridges, Fixed and Floating S9C/AX
+5430 Storage Tanks S9I/KZ
+5440 Scaffold Equipment and Concrete Forms S9I/KZ
+5445 Prefabricated Tower Structures S9I/KZ
+5450 Miscellaneous Prefab Structures S9I/KZ
+5510 Lumber and Related Basic Wood Materials S9I/KZ
+5520 Millwork S9I/KZ
+5530 Plywood and Veneer S9I/KZ
+5610 Mineral Construction Materials, Bulk** 7FX/75
+5620 Building Tile, Brick, and Block** 7FX/75
+5630 Pipe and Conduit, Nonmetallic** 7FX/75
+5640 Wallboard, Building Paper, Thermal Insulation Materials** 7FX/75
+5650 Roofing and Siding Materials** 7FX/75
+5660 Fencing, Fences, Gates and Components S9I/KZ
+IV-10 
+FSC DESCRIPTION RIC /ACTY 
+CODE 
+5670 Building Components Prefabricated** 7FX/75
+5675 Non-Wood Construction, Lumber, and Related Material S9I/KZ
+5680 Miscellaneous Construction Materials** 7FX/75
+5805 Telephone and Telegraph Equipment S9I/KZ
+5810 Communications Security Equipment and Components S9E/TX
+5811 Other Cryptologic Equipment and Components S9E/TX
+5815 Teletype and Facsimile Equipment S9I/KZ
+5820 Radio and TV Communications Equipment, Except Airborne S9E/TX
+5821 Radio and TV Communications Equipment, Airborne S9G/CX
+5825 Radio and Navigation Equipment, Except Airborne S9E/TX
+5826 Radio Navigation Equipment, Airborne S9G/CX
+5830 Intercom and PA Systems, Except Airborne S9I/KZ
+5831 Telecommunications and PA Systems, Airborne S9G/CX
+5835 Sound Recording and Reproducing Equipment S9I/KZ
+5836 Video Recording and Reproducing Equipment S9I/KZ
+5840 Radar Equipment, Except Airborne S9E/TX
+5841 Radar Equipment, Airborne S9G/CX
+5845 Underwater Sound Equipment S9E/TX
+5850 Visible and Invisible Light Communications Equipment S9E/TX
+5855 Night Vision Equipment, Emitted and Reflected Radiation S9E/TX
+5860 Simulated Coherent Radiation Devices, Components, and Accessories S9E/TX
+5865 Elect Countermeasures, Counter Countermeasures and Quick Reaction 
+Capability Equipment S9E/TX
+5895 Miscellaneous Communication Equipment S9E/TX
+5905 Resistors S9E/TX
+5910 Capacitors S9E/TX
+5915 Filters and Networks S9E/TX
+5920 Fuses, Arrestors, Absorbers and Protectors S9E/TX
+5925 Circuit Breakers S9E/TX
+5930 Switches S9E/TX
+IV-11 
+FSC DESCRIPTION RIC /ACTY 
+CODE 
+5935 Connectors, Electrical S9E/TX
+5940 Lugs, Terminals, Terminal Strips S9G/CX
+5945 Relays, Solenoids S9E/TX
+5950 Coils, Transformers S9E/TX
+5955 Oscillators, Piezoelectric Crystals S9E/TX
+5960 Electron Tubes and Associated Hardware S9E/TX
+5961 Semiconductor Devices and Associated Hardware S9E/TX
+5962 Microcircuits, Electronic S9E/TX
+5963 Electronic Modules S9E/TX
+5965 Headsets, Handsets, Microphones, Speakers S9E/TX
+5970 Electrical Insulators and lnsulating Materials S9G/CX
+5975 Electric Hardware, Supplies S9G/CX
+5977 Elect Contact Brushes, Electrodes S9G/CX
+5980 Optoelectronic Devices and Assoc Hardware S9E/TX
+5985 Antennas, Waveguides, Related Equipment S9E/TX
+5990 Synchros and Resolvers S9E/TX
+5995 Cable, Cord, Wire Assemblies; Communications Equipment S9G/CX
+5996 Amplifiers S9E/TX
+5998 Electrical, Electronic Assemblies; Boards, Cards, Assoc Hardware S9E/TX
+5999 Miscellaneous Electrical and Electronic Components S9E/TX
+6005 Couplers, Splitters, Mixers S9E/TX
+6006 Attenuators S9E/TX 
+6007 Fiber Optic Filters S9E/TX
+6008 Optical Multiplexers/Demultiplexers S9E/TX
+6010 Fiber Optic Conductors S9E/TX
+6015 Fiber Optic Cables S9E/TX
+6020 Fiber Optic Cable Assemblies, Harnesses S9E/TX
+6021 Fiber Optic Switches S9E/TX
+6025 Fiber Optic Transmitters S9E/TX
+IV-12 
+FSC DESCRIPTION RIC /ACTY 
+CODE 
+6026 Fiber Optic Receivers S9E/TX
+6029 Optical Repeaters S9E/TX
+6030 Fiber Optic Devices S9E/TX
+6032 Fiber Optic Light Sources and Photo Detectors S9E/TX
+6033 Fiber Optic Photo Detectors S9E/TX
+6034 Fiber Optic Modulators/Demodulator S9E/TX
+6035 Fiber Optic Light Transfer/Image Transfer Devices S9E/TX
+6040 Fiber Optic Sensors S9E/TX
+6050 Fiber Optic Passive Devices S9E/TX
+6060 Fiber Optic Interconnectors S9E/TX
+6070 Fiber Optic Accessories and Supplies S9E/TX
+6080 Fiber Optic Kits and Sets S9E/TX
+6099 Miscellaneous Fiber Optic Components S9E/TX
+6105 Motors, Electrical S9G/CX
+6110 Electrical Control Equipment S9G/CX
+6115 Generators and Generator Sets, Electrical S9G/CX
+6116 Fuel Cell Power Units, Components and Accessories S9G/CX
+6117 Solar Electrical Power Systems S9G/CX
+6120 Transformers, Distribution, and Power Stations S9G/CX
+6125 Converters, Electrical, Rotating S9G/CX
+6130 Converters, Electrical, Nonrotating S9G/CX
+6135 Batteries, Nonrechargeable S9G/CX
+6140 Batteries, Rechargeable S9G/CX
+6145 Wire and Cable, Elect S9E/TX
+6150 Miscellaneous Elect Power and Distribution Equipment S9G/CX
+6160 Miscellaneous Battery Retaining Fixtures and Liners S9G/CX
+6210 Indoor, Outdoor Elect Lighting Fixtures S9I/KZ
+6220 Electric Vehicle Lights, Fixtures S9I/KZ
+6230 Electric Portable and Hand Lighting Equipment S9I/KZ
+IV-13 
+FSC DESCRIPTION RIC /ACTY 
+CODE 
+6240 Electric Lamps S9I/KZ
+6250 Ballasts, Lampholders, Starters S9I/KZ
+6260 Nonelectrical Lighting Fixtures S9I/KZ
+6310 Traffic and Transit Signal Systems S9I/KZ
+6320 Shipboard Alarm and Signal Systems S9G/CX
+6330 Railroad Signal and Warning Devices S9I/KZ
+6340 Aircraft Alarm and Signal Systems S9G/CX
+6350 Miscellaneous Alarm Signal and Security Detection Systems S9I/KZ
+6505 Drugs and Biologicals S9M/KX
+6508 Medicated Cosmetics and Toiletries S9M/KX
+6510 Surgical Dressing Materials S9M/KX
+6515 Med, Surgical Instruments, Equipment and Supplies S9M/KX
+6520 Dental Instruments, Equipment and Supplies S9M/KX
+6525 X-Ray Equipment and Supplies: Medical, Dental, Veterinary S9M/KX
+6530 Hospital Furniture, Equipment, Utensils, Supplies S9M/KX
+6532 Hospital, Surgical Clothing, Related Spec Purpose Items S9M/KX
+6540 Ophthalmic Instruments, Equipment and Supplies S9M/KX
+6545 Replenishable Field Med Sets, Kits and Outfits S9M/KX
+6550 In-Vitro Diagnostic Substances, Reagents, Test Kits and Sets S9M/KX
+6605 Navigational Instruments S9G/CX
+6610 Flight Instruments S9G/CX
+6615 Auto Pilot Mechanisms and Airborne Gyro Components S9G/CX
+6620 Engine Instruments S9G/CX 
+6625 Electrical and Electronic Properties Measuring, Test Instruments S9E/TX
+6630 Chemical Analysis Instruments S9M/KX
+6635 Physical Properties Testing and Inspection Equipment S9G/CX
+6636 Environmental Chambers and Related Equipment S9I/KZ
+6640 Lab Equipment and Supplies S9G/CX
+6645 Time Measuring Instruments S9G/CX
+IV-14 
+FSC DESCRIPTION RIC /ACTY 
+CODE 
+6650 Optical Instruments, Test Equipment, Components and Accessories S9G/CX
+6655 Geophysical Instruments S9G/CX
+6660 Meteorological Instruments and Apparatus S9G/CX
+6665 Hazard-Detecting Instruments and Apparatus S9G/CX
+6670 Scales and Balances S9G/CX
+6675 Drafting, Surveying, and Mapping Instruments S9I/KZ
+6680 Liquid, Gas Flow, Liquid Level and Mechanisms Motion Measuring Instruments S9G/CX
+6685 Pressure, Temp, and Humidity Measurement and Control Instruments S9G/CX
+6695 Combination and Miscellaneous Instruments S9G/CX
+6710 Cameras, Motion Picture S9I/KZ
+6720 Cameras, Still Picture S9I/KZ
+6730 Photo Projection Equipment S9I/KZ
+6740 Photo Developing and Finishing Equipment S9I/KZ
+6750 Photo Supplies S9I/KZ
+6760 Photo Equipment and Accessories S9I/KZ
+6770 Film, Processed S9I/KZ
+6780 Photo Sets, Kits, and Outfits S9I/KZ
+6810 Chemicals S9G/CX
+6820 Dyes S9G/CX
+6830 Gases: Compressed and Liquefied S9G/CX 
+6840 Pest Control Agents and Disinfectants S9G/CX
+6850 Miscellaneous Chemical Specialties S9G/CX
+6910 Training Aids S9M/KX
+6920 Armament Training Devices S9I/KZ
+6930 Operation Training Devices S9I/KZ
+6940 Communications Training Devices S9I/KZ
+7010 ADPE Systems Configuration S9I/KZ
+7020 ADP Cent Processing Unit (CPU, Computer), Analog S9I/KZ
+7021 ADP Cent Processing Unit (CPU, Computer), Digital S9I/KZ
+IV-15 
+FSC DESCRIPTION RIC /ACTY 
+CODE 
+7022 ADP Cent Processing Unit (CPU, Computer), Hybrid S9I/KZ
+7025 ADP Input/Output and Storage Devices S9I/KZ
+7030 ADP Software S9I/KZ
+7035 ADP Supplies and Equipment S9I/KZ
+7040 Punched Card Equipment S9I/KZ
+7042 Mini and Micro Computer Control Devices S9I/KZ
+7045 ADP Supplies S9I/KZ
+7050 ADP Components S9I/KZ
+7105 Household Furniture** 3FN/75
+7110 Office Furniture** 3FN/75
+7125 Cabinets, Lockers, Bins, Shelving** 3FN/75
+7195 Miscellaneous Furniture and Fixtures** 3FN/75
+7210 Household Furnishings S9T/CY
+7220 Floor Coverings** 3FN/75
+7230 Draperies, Awnings and Shades 3FN/75
+7240 Household and Commercial Utility Containers 7FX/75
+7290 Miscellaneous Household Commercial Furnishings and Appliances 7FX/75
+7310 Food Cooking, Baking and Servicing Equipment S9I/KZ
+7320 Kitchen Equipment and Appliances S9I/KZ
+7330 Kitchen Hand Tools and Utensils 7FX/75
+7340 Cutlery and Flatware 7FX/75
+7350 Tableware 7FX/75
+7360 Sets, Kits, Outfits and Modules, Food Preparation and Serving S9I/KZ
+7420 Accounting and Calculating Mach ** 2FY/75
+7430 Typewriters and Office Type Composing Mach** 2FY/75
+7435 Office Info Systems Equipment** 2FY/75
+7450 Office Type Sound Recording and Reproducing Mach S9I/KZ
+7460 Visible Record Equipment* * 2FY/75
+7490 Miscellaneous Office Machines** 2FY/75
+IV-16 
+FSC DESCRIPTION RIC /ACTY 
+CODE 
+7510 Office Supplies** 2FY/75
+7520 Office Devices and Accessories** 2FY/75
+7530 Stationery and Record Forms** 2FY/75
+7540 Standard Forms** 7FX/75
+7610 Books and Pamphlets S9I/KZ
+7630 Newspapers and Periodicals S9I/KZ
+7640 Maps, Atlases, Charts and Globes S9G/CX
+7641 Aeronautical Mapping, Charting, and Geodetic Products 
+(located at Richmond, DSCR-JN) HM8
+7642 Hydrographic Mapping, Charting, and Geodetic Products 
+(located at Richmond, DSCR-JN) HM8
+7643 Topographic Mapping, Charting, and Geodetic Products 
+(located at Richmond, DSCR-JN) HM8
+7644 Digital Mapping, Charting, and Geodetic Products 
+(located at Richmond, DSCR-JN) HM8
+7650 Drawings and Specifications S9I/KZ
+7660 Sheet and Book Music S9I/KZ
+7670 Microfilm, Processed S9I/KZ
+7690 Miscellaneous Printed Matter S9I/KZ
+7710 Musical Instruments** 7FX/75
+7720 Musical Instruments Parts and Accessories 7FX/75
+7730 Phonograph, Radio and TVs, Home-type** 7FX/75
+7740 Phonograph Records** 7FX/75
+7810 Athletic and Sporting Equipment 7FX/75
+7820 Games, Toys, Wheeled, Goods 7FX/75
+7830 Recreation and Gym Equipment 7FX/75
+7910 Floor Polishers and Vacuum Cleaning Equipment 7FX/75
+7920 Brooms, Brushes, Mops, Sponges 7FX/75
+7930 Cleaning and Polishing Compounds and Prep 7FX/75
+8010 Paints, Dopes, Varnishes and Related** 6FE/75
+8020 Paint and Artists' Brushes** 6FE/75
+8030 Preservative and Sealing Compounds** 6FE/75
+IV-17 
+FSC DESCRIPTION RIC /ACTY 
+CODE 
+8040 Adhesives** 6FE/75
+8105 Bags and Sacks** 2FY/75
+8110 Drums and Cans S9I/KZ
+8115 Boxes, Cartons, Crates** 2FY/75
+8120 Commercial and Industrial Gas Cylinders S9G/CX
+8125 Bottles and Jars S9I/KZ
+8130 Reels and Spools S9I/KZ
+8135 Packaging and Packing Bulk Materials** 2FY/75
+8140 Ammo and Nuclear Ordnance Boxes, Packages and Specialized Containers S9G/CX
+8145 Special Ship and Storage Containers S9I/KZ
+8305 Textile Fabrics S9T/CY
+8310 Yarn and Thread S9T/CY
+8315 Notions and Apparel Findings S9T/CY
+8320 Padding and Stuffing Materials S9T/CY
+8325 Fur Materials S9T/CY
+8330 Leather S9T/CY
+8335 Shoe Findings and Soling Materials S9T/CY
+8340 Tents and Tarpaulins S9T/CY
+8345 Flags and Pennants S9T/CY
+8405 Outerwear, Men S9T/CY
+8410 Outerwear, Women S9T/CY
+8415 Clothing, Special Purpose S9T/CY
+8420 Underwear and Nightwear, Men S9T/CY
+8425 Underwear and Nightwear, Women S9T/CY
+8430 Footwear, Men S9T/CY
+8435 Footwear, Women S9T/CY
+8440 Hosiery, Handwear and Clothing S9T/CY
+8445 Hosiery, Handwear and Clothing Accessories, Women S9T/CY
+8450 Child and Infant Apparel and Accessories S9T/CY
+IV-18 
+FSC DESCRIPTION RIC /ACTY 
+CODE 
+8455 Badges and Insignia S9T/CY
+8460 Luggage S9T/CY
+8465 Individual Equipment S9T/CY
+8470 Armor, Personal S9T/CY
+8475 Spec Flight Clothing and Accessories S9T/CY
+8510 Perfumes, Toilet Preparations and Powders 7FX/75
+8520 Toilet Soap, Shave Prep and Dentifrices 7FX/75
+8530 Personal Toiletry Articles 7FX/75
+8540 Toiletry Paper Products 2FY/75
+8710 Forage and Feed 7FX/75
+8720 Fertilizers** 7FX/75
+8730 Seeds and Nursery Stock** 7FX/75
+8810 Live Animals, Raised for Food* S9S/S9P 
+8820 Live Animals, Not for Food* S9M/KX
+8905 Meat, Poultry and Fish* S9S/S9P
+8910 Dairy Foods and Eggs* S9S/S9P
+8915 Fruits and Vegetables* S9S/S9P
+8920 Bakery and Cereal Products* S9S/S9P
+8925 Sugar, Confectionery and Nuts* S9S/S9P
+8930 Jams, Jellies and Preserves* S9S/S9P
+8935 Soups and Bouillons* S9S/S9P
+8940 Special Dietary Foods and Food Specialty Preparations* S9S/S9P
+8945 Food, Oils and Fats* S9S/S9P
+8950 Condiments and Related Products* S9S/S9P
+8955 Coffee, Tea and Cocoa* S9S/S9P
+8960 Beverages, Nonalcoholic* S9S/S9P
+8965 Beverages, Alcoholic* S9S/S9P
+8970 Composite Food Packages* S9S/S9P
+8975 Tobacco Products S9S/S9P
+IV-19 
+FSC DESCRIPTION RIC /ACTY 
+CODE 
+9110 Fuels, Solid S9I/KZ
+9130 Liquid Propulsion and Fuels, Petroleum Base S9F/KY
+9140 Fuel Oils S9F/KY
+9150 Oils and Greases: Cutting, Lubricating, and Hydraulic S9G/CX
+9160 Miscellaneous Waxes, Oils and Fats S9I/KZ
+9310 Paper and Paperboard 2FY/75
+9320 Rubber Fabricated Materials S9I/KZ
+9330 Plastics Fabricated Materials S9I/KZ
+9340 Glass Fabricated Materials S9I/KZ
+9350 Refractories and Fire Surfacing Materials S9I/KZ
+9390 Miscellaneous Fabricated Nonmetal Materials S9I/KZ
+9410 Crude Grades of Plant Materials S9M/KX
+9420 Fibers: Vegetable, Animal and Synthetic S9T/CY
+9430 Miscellaneous Crude Animal Products, Inedible S9T/CY
+9440 Miscellaneous Crude Agricultural and Forest Products S9I/KZ
+9450 Nonmetallic Scrap, Except Textile S9I/KZ
+9505 Wire, Nonelectrical S9I/KZ
+9510 Bars and Rods S9I/KZ
+9515 Plate, Sheet, Strip, Foil and Leaf S9I/KZ
+9520 Structural Shapes S9I/KZ
+9525 Wire, Nonelectrical, Nonferrous Base Metal S9I/KZ
+9530 Bars and Rods, Nonferrous Base Metal S9I/KZ
+9535 Plate, Sheet, Strip and Foil: Nonferrous Base Metal S9I/KZ
+9540 Structural Shapes, Nonferrous Base Metal S9I/KZ
+9545 Plate, Sheet, Strip, Foil, and Wire: Precious Metal S9I/KZ
+9610 Ores S9I/KZ
+9620 Minerals, Natural and Synthetic S9I/KZ
+9630 Additive Metal Materials S9I/KZ
+9640 Iron and Steel Primary and Semi-finished Products S9I/KZ
+IV-20 
+FSC DESCRIPTION RIC /ACTY 
+CODE 
+9650 Nonferrous Base Metal Refinery and Intermediate Forms S9I/KZ
+9660 Precious Metals Primary Forms S9I/KZ
+9670 Iron and Steel Scrap S9I/KZ
+9680 Nonferrous Metal Scrap S9I/KZ
+9905 Signs, Advertising Displays, Displays, and ID Plates** 7FX/75
+9910 Jewelry 7FX/75
+9915 Collectors and/or Historical Items 7FX/75
+9920 Smokers' Articles and Matches 7FX/75
+9925 Ecclesiastical Equipment, Furnishings and Supplies S9T/CY
+9930 Memorials, Cemeterial and Mortuary Equipment Supplies S9M/KX
+9999 Miscellaneous Items S9I/KZ
+** FSCs that are supported by both GSA and DSCP G&I 
+S9C/AX: Defense Supply Center, Columbus (Construction, formerly Defense Construction 
+Supply Center) 
+S9E/TX: Defense Supply Center, Columbus (Electronics, formerly Defense Electronics Supply 
+Center) 
+S9G/CX: Defense Supply Center, Richmond, (formerly Defense General Supply Center) 
+HM8: Defense Supply Center, Richmond (Mapping, Charting and Geodetic Products) 
+S9T/CY: Defense Supply Center, Philadelphia (Clothing and Textiles) (formerly Defense 
+Personnel Support Center) 
+S9S: Defense Supply Center, Philadelphia (Subsistence) (formerly Defense Personnel 
+Support Center) 
+S9M/KX: Defense Supply Center, Philadelphia (Medical) (formerly Defense Personnel Support 
+Center) 
+S9I: Defense Supply Center Philadelphia (General and Industrial) (formerly Defense 
+ Industrial Supply Center Philadelphia) 
+S9F/KY: Defense Energy Support Center (formerly Defense Fuel Supply Center) 
+GENERAL SERVICES ADMINISTRATION 
+FAA/75: Vehicle Acquisition and Leasing Service 
+FCX: Services Acquisition Center 
+2FY/75: Office and Supply and Paper Products 
+FCG: Office and Scientific Equipment Acquisition Center 
+3FN/75-CO: National Furniture Center 
+6FE/75: Tools and Appliances Acquisition Center 
+6FR: National Customer Service Center 
+7FX/75: General Products Commodity Center 
+9FT-10: Paints and Chemicals Acquisition Center 
+FCI: Information Technology Acquisition Center 
+IV-21 
+Table 2
+FEDERAL SUPPLY CLASS (FSC) ASSIGNMENTS TO DLA/GSA 
+ALPHABETIC LISTING 
+FSC DESCRIPTION SOS RIC 
+5350 Abrasive Materials** 7FX/75
+3461 Accessories for Secondary Metalworking Machinery S9G/CX
+7420 Accounting and Calculating Mach** 2FY/75
+9630 Additive Metal Materials S9I
+8040 Adhesives** 6FE/75
+7020 ADP Cent Processing Unit (CPU, Computer), Analog S9I
+7021 ADP Cent Processing Unit (CPU, Computer), Digital S9I
+7022 ADP Cent Processing Unit (CPU, Computer), Hybrid S9I
+7050 ADP Components S9I
+7025 ADP Input/Output and Storage Devices S9I
+7030 ADP Software S9I
+7045 ADP Supplies S9I
+7035 ADP Supplies and Equipment S9I
+7010 ADPE Systems Configuration S9I
+7641 Aeronautical Mapping, Charting, and Geodetic Products 
+(located at Richmond, DSCR-JN) HM8
+4120 Air Conditioning Equipment S9I
+4460 Air Purification Equipment S9C/AX
+1660 Aircraft Air Conditioning, Heat and Pressurizing Equipment S9G/CX 
+6340 Aircraft Alarm and Signal Systems S9G/CX
+1710 Aircraft Arrest, Barrier and Barricade Equipment S9C/AX 
+1280 Aircraft Bombing Fire Control Components S9G/CX 
+1730 Aircraft Ground Servicing Equipment S9G/CX 
+1270 Aircraft Gunnery Fire Control Components S9G/CX 
+1650 Aircraft Hydraulic, Vacuum and De-icing System Components S9G/CX 
+1620 Aircraft Landing Gear Components S9G/CX 
+1720 Aircraft Launching Equipment S9C/AX 
+4920 Aircraft Maintenance and Rep Shop Specialized Equipment S9G/CX
+1610 Aircraft Propellers S9G/CX 
+IV-22 
+FSC DESCRIPTION SOS RIC 
+1630 Aircraft Wheel and Brake Systems S9G/CX 
+1740 Airfield Specialized Trucks and Trails S9C/AX 
+1560 Airframe Structural Components S9G/CX 
+8140 Ammo and Nuclear Ordnance Boxes, Packages and Specialized Containers S9G/CX
+4925 Ammo Maintenance, Rep and Checkout Specialized Equipment S9G/CX
+5996 Amplifiers S9E/TX
+5985 Antennas, Waveguides, Related Equipment S9E/TX
+6920 Armament Training Devices S9I
+8470 Armor, Personal S9T/CY
+1090 Assemblies Interchangeable Between Weapons in 2 or More Classes S9C/AX 
+7810 Athletic and Sporting Equipment 7FX/75
+6006 Attenuators S9E/TX 
+6615 Auto Pilot Mechanisms and Airborne Gyro Components S9G/CX
+8455 Badges and Insignia S9T/CY
+8105 Bags and Sacks** 2FY/75
+8920 Bakery and Cereal Products* S9S/S9P
+6250 Ballasts, Lampholders, Starters S9I
+9510 Bars and Rods S9I
+9530 Bars and Rods, Nonferrous Base Metal S9I
+6135 Batteries, Nonrechargeable S9G/CX
+6140 Batteries, Rechargeable S9G/CX
+3110 Bearings, Anti-friction, Unmounted S9G/CX 
+3130 Bearings, Mounted S9G/CX 
+3120 Bearings, Plain, Unmounted S9G/CX 
+3030 Belting, Drive Belts, Fan Belts, and Accessories S9I 
+3441 Bending and Forming Machinery S9C/AX 
+8965 Beverages, Alcoholic* S9S/S9P
+8960 Beverages, Nonalcoholic* S9S/S9P
+3940 Block, Tackle, Rigging, Sling S9I
+IV-23 
+FSC DESCRIPTION SOS RIC 
+5306 Bolts S9I
+7610 Books and Pamphlets S9I
+3411 Boring Machine S9G/CX 
+8125 Bottles and Jars S9I
+8115 Boxes, Cartons, Crates** 2FY/75
+5341 Brackets S9I
+5420 Bridges, Fixed and Floating S9C/AX
+3412 Broaching Machine S9G/CX 
+7920 Brooms, Brushes, Mops, Sponges 7FX/75
+5670 Building Components Prefabricated** 7FX/75
+5620 Building Tile, Brick, and Block** 7FX/75
+2050 Buoys S9C/AX 
+5365 Bushings, Rings, Shims and Spacers S9G/CX
+7125 Cabinets, Lockers, Bins, Shelving** 3FN/75
+5995 Cable, Cord, Wire Assemblies; Communications Equipment S9G/CX
+6710 Cameras, Motion Picture S9I
+6720 Cameras, Still Picture S9I
+1080 Camouflage and Deception Equipment S9C/AX 
+5910 Capacitors S9E/TX
+4330 Centrifugal, Separators, and Pressure and Vacuum Filters S9C/AX
+4010 Chain and Wire Rope S9G/CX
+6630 Chemical Analysis Instruments S9M/KX
+3650 Chemical and Pharmaceutical Manufacturing Machinery S9G/CX
+1040 Chemical Weapons & Equipment S9C/AX 
+6810 Chemicals S9G/CX
+8450 Child and Infant Apparel and Accessories S9T/CY
+5925 Circuit Breakers S9E/TX
+3630 Clay and Concrete Industries Machinery S9G/CX
+3694 Clean Work Stations, Control Environment and Related Equipment S9G/CX
+IV-24 
+FSC DESCRIPTION SOS RIC 
+7930 Cleaning and Polishing Compounds and Prep 7FX/75
+8415 Clothing, Special Purpose S9T/CY
+8955 Coffee, Tea and Cocoa* S9S/S9P
+5360 Coil, Flat and Wire Springs S9I
+5950 Coils, Transformers S9E/TX
+5419 Collective Modular Support System S9C/AX
+9915 Collectors and/or Historical Items 7FX/75
+6695 Combination and Miscellaneous Instruments S9G/CX
+8120 Commercial and Industrial Gas Cylinders S9G/CX
+2060 Commercial Fishing Equipment S9C/AX 
+5810 Communications Security Equipment and Components S9E/TX
+6940 Communications Training Devices S9I
+8970 Composite Food Packages* S9S/S9P
+4310 Compressors and Vacuum Pumps S9C/AX
+8950 Condiments and Related Products* S9S/S9P
+5935 Connectors, Electrical S9E/TX
+6130 Converters, Electrical, Nonrotating S9G/CX
+6125 Converters, Electrical, Rotating S9G/CX
+3910 Conveyors S9I
+6005 Couplers, Splitters, Mixers S9E/TX
+3815 Crane and Crane Shovel Attachments S9I
+3810 Cranes and Crane Shovels S9I
+9410 Crude Grades of Plant Materials S9M/KX
+3635 Crystal and Glass Industries Machinery S9G/CX
+7340 Cutlery and Flatware 7FX/75
+3456 Cutting and Forming Tools for Secondary Metalworking Machinery S9G/CX
+3455 Cutting Tools for Machinery Tools S9G/CX
+8910 Dairy Foods and Eggs* S9S/S9P
+3730 Dairy, Poultry, Livestock Equipment S9I
+IV-25 
+FSC DESCRIPTION SOS RIC 
+2030 Deck Machinery S9C/AX 
+4230 Decontaminating and Impregnating Equipment S9I
+1075 Degaussing and Mine Sweep Equipment S9C/AX 
+6520 Dental Instruments, Equipment and Supplies S9M/KX
+4923 Depth Charges and Underwater Mines Maintenance, Rep and Checkout S9C/AX
+2815 Diesel Engine and Components S9C/AX 
+7644 Digital Mapping, Charting, and Geodetic Products (located at Richmond, 
+DSCR-JN) HM8
+5345 Disks and Stones, Abrasive** 7FX/75
+6675 Drafting, Surveying, and Mapping Instruments S9I
+7230 Draperies, Awnings and Shades 3FN/75
+7650 Drawings and Specifications S9I
+5133 Drill Bits, Counterbores and Countersinks; Hand and Mach 6FE/75
+3413 Drilling and Tapping Machine S9G/CX 
+6505 Drugs and Biologicals S9M/KX
+8110 Drums and Cans S9I
+4440 Dryer, Dehydrators, Anhydrators S9C/AX
+6820 Dyes S9G/CX
+3805 Earth Moving and Excavating Equipment S9I
+9925 Ecclesiastical Equipment, Furnishings and Supplies S9T/CY
+3431 Elect Arc Welding Equipment S9G/CX 
+5977 Elect Contact Brushes, Electrodes S9G/CX
+5865 Elect Countermeasures, Counter Countermeasures and Quick Reaction 
+Capability Equipment S9E/TX
+3432 Elect Resistance Welding Equipment S9G/CX 
+3410 Electric and Ultrasonic Erosion Machine S9G/CX 
+5975 Electric Hardware, Supplies S9G/CX
+6240 Electric Lamps S9I
+6230 Electric Portable and Hand Lighting Equipment S9I
+6220 Electric Vehicle Lights, Fixtures S9I
+6625 Electrical and Electronic Properties Measuring, Test Instruments S9E/TX
+IV-26 
+FSC DESCRIPTION SOS RIC 
+6110 Electrical Control Equipment S9G/CX
+5970 Electrical Insulators and lnsulating Materials S9G/CX
+5998 Electrical, Electronic Assemblies; Boards, Cards, Assoc Hardware S9E/TX
+5960 Electron Tubes and Associated Hardware S9E/TX
+5963 Electronic Modules S9E/TX
+3960 Elevators and Escalators S9C/AX
+2945 Engine Air and Oil Filters, Strainers and Cleaners, Aircraft S9G/CX 
+2940 Engine Air and Oil Filters, Strainers and Cleaners, Except Aircraft S9C/AX 
+2935 Engine Cooling Systems Components, Aircraft S9G/CX 
+2930 Engine Cooling Systems Components, Except Aircraft S9C/AX 
+2925 Engine Electrical Systems Components, Aircraft S9G/CX 
+2920 Engine Electrical Systems Components, Except Aircraft S9C/AX 
+2915 Engine Fuel Systems Components, Aircraft S9G/CX 
+2910 Engine Fuel Systems Components, Except Aircraft S9C/AX 
+6620 Engine Instruments S9G/CX 
+6636 Environmental Chambers and Related Equipment S9I
+4140 Fans, Air Circulators and Blower Equipment S9I
+5325 Fastening Devices S9I
+5660 Fencing, Fences, Gates and Components S9I
+8720 Fertilizers** 7FX/75
+6070 Fiber Optic Accessories and Supplies S9E/TX
+6020 Fiber Optic Cable Assemblies, Harnesses S9E/TX
+6015 Fiber Optic Cables S9E/TX
+6010 Fiber Optic Conductors S9E/TX
+6030 Fiber Optic Devices S9E/TX
+6007 Fiber Optic Filters S9E/TX
+6060 Fiber Optic Interconnectors S9E/TX
+6080 Fiber Optic Kits and Sets S9E/TX
+6032 Fiber Optic Light Sources and Photo Detectors S9E/TX
+IV-27 
+FSC DESCRIPTION SOS RIC 
+6035 Fiber Optic Light Transfer/Image Transfer Devices S9E/TX
+6034 Fiber Optic Modulators/Demodulator S9E/TX
+6050 Fiber Optic Passive Devices S9E/TX
+6033 Fiber Optic Photo Detectors S9E/TX
+6026 Fiber Optic Receivers S9E/TX
+6040 Fiber Optic Sensors S9E/TX
+6021 Fiber Optic Switches S9E/TX
+6025 Fiber Optic Transmitters S9E/TX
+4020 Fiber Rope, Cordage, Twine S9I
+9420 Fibers: Vegetable, Animal and Synthetic S9T/CY
+6770 Film, Processed S9I
+5915 Filters and Networks S9E/TX
+1220 Fire Control Computing Sights and Devices S9E/TX 
+1260 Fire Control Designating and Indicating Equipment S9E/TX 
+1210 Fire Control Directors S9E/TX 
+4931 Fire Control Maintenance and Rep Shop Specialized Equipment S9G/CX
+1285 Fire Control Radar Equipment, Except Airborne S9E/TX 
+1287 Fire Control Sonar Equipment S9E/TX 
+1250 Fire Control Stabilizing Mechanisms S9E/TX 
+1265 Fire Control Transmitting and Receiving Equipment, Except Airborne S9E/TX 
+4210 Fire Fighting Equipment S9I
+4030 Fitting for Rope, Cable, Chain S9C/AX
+4730 Fittings and Specialties; Hose, Pipe and Tube S9C/AX
+8345 Flags and Pennants S9T/CY
+6610 Flight Instruments S9G/CX
+7220 Floor Coverings** 3FN/75
+7910 Floor Polishers and Vacuum Cleaning Equipment 7FX/75
+7310 Food Cooking, Baking and Servicing Equipment S9I
+3605 Food Products Machinery and Equipment S9G/CX
+IV-28 
+FSC DESCRIPTION SOS RIC 
+8945 Food, Oils and Fats* S9S/S9P
+8430 Footwear, Men S9T/CY
+8435 Footwear, Women S9T/CY
+8710 Forage and Feed 7FX/75
+3446 Forging Machines and Hammers S9G/CX 
+3680 Foundry Mach, Related Equipment and Supplies S9G/CX
+8915 Fruits and Vegetables* S9S/S9P
+4530 Fuel Burning Equipment Units S9I
+6116 Fuel Cell Power Units, Components and Accessories S9G/CX
+9140 Fuel Oils S9F/KY
+9110 Fuels, Solid S9I
+8325 Fur Materials S9T/CY
+5920 Fuses, Arrestors, Absorbers and Protectors S9E/TX
+7820 Games, Toys, Wheeled, Goods 7FX/75
+3750 Gardening Implements and Tools 6FE/75 
+3655 Gas Generating and Dispensing Systems Fixed or Mobile S9G/CX
+2810 Gas Reciprocating Engine and Components, Aircraft S9G/CX 
+2805 Gas Reciprocating Engine and Components, Except Aircraft S9C/AX 
+2850 Gas Rotary Engine and Components S9I 
+2840 Gas Turbines, Jet Engine and Components, Aircraft S9G/CX 
+2835 Gas Turbines, Jet Engine and Components, Except Aircraft S9G/CX 
+3433 Gas Welding, Heat Cutting, and Metalizing Equipment S9G/CX 
+6830 Gases: Compressed and Liquefied S9G/CX 
+3414 Gear Cutting and Finishing Machines S9G/CX 
+3020 Gears, Pulleys, Sprockets, and Transmission Chain S9C/AX 
+6115 Generators and Generator Sets, Electrical S9G/CX
+6655 Geophysical Instruments S9G/CX
+9340 Glass Fabricated Materials S9I
+3415 Grinding Machine S9G/CX 
+IV-29 
+FSC DESCRIPTION SOS RIC 
+1420 Guided Missile Components S9E/TX 
+1450 Guided Missile Handling and Servicing Equipment S9C/AX 
+4935 Guided Missile Maintenance, Rep and Checkout Specialized Equipment S9G/CX
+1430 Guided Missile Remote Control Systems S9E/TX 
+1015 Guns, 75 mm - 125 mm S9C/AX 
+1020 Guns, over 125 mm - 150 mm S9C/AX 
+1025 Guns, over 150 mm - 200 mm S9C/AX 
+1030 Guns, over 200 mm - 300 mm S9C/AX 
+1010 Guns, over 30 mm to 75 mm S9C/AX 
+1035 Guns, over 300 mm S9C/AX 
+1005 Guns, thru 30 mm S9C/AX 
+5110 Hand Tools, Edged, Nonpowered 6FE/75
+5120 Hand Tools, Non-edged, Non-powered 6FE/75
+5130 Hand Tools, Power Driven 6FE/75
+5342 Hardware, Weapon System S9G/CX
+5340 Hardware, Commercial S9I 
+3720 Harvesting Equipment S9I
+6665 Hazard-Detecting Instruments and Apparatus S9G/CX
+4235 Hazardous Material Spill Containment Cleanup Equipment and Material S9G/CX
+5965 Headsets, Handsets, Microphones, Speakers S9E/TX
+4420 Heat Exchange and Steam Condensers S9C/AX
+1615 Helicopter Rotor Blades, Drive Mechanisms and Components S9G/CX 
+4720 Hose and Tubing, Flexible S9C/AX
+8440 Hosiery, Handwear and Clothing S9T/CY
+8445 Hosiery, Handwear and Clothing Accessories, Women S9T/CY
+6530 Hospital Furniture, Equipment, Utensils, Supplies S9M/KX
+6532 Hospital, Surgical Clothing, Related Spec Purpose Items S9M/KX
+7240 Household and Commercial Utility Containers 7FX/75
+7210 Household Furnishings S9T/CY
+IV-30 
+FSC DESCRIPTION SOS RIC 
+7105 Household Furniture** 3FN/75
+3442 Hydraulic and Pneumatic Presses, Power Driven S9G/CX 
+7642 Hydrographic Mapping, Charting, and Geodetic Products (located at Richmond, 
+DSCR-JN) HM8
+8465 Individual Equipment S9T/CY
+6210 Indoor, Outdoor Elect Lighting Fixtures S9I
+3693 Industrial Assembly Machinery S9G/CX
+4410 Industrial Boilers S9C/AX
+4430 Industrial Furnaces, Kilns, Lehrs and Ovens S9I
+3611 Industrial Marking Machinery S9G/CX
+3530 Industrial Sew Mach and Mobile Textile Repair Shops S9I
+3660 Industrial Size Reduction Machinery S9G/CX
+5220 Inspection Gage and Precision Layout Tools S9I
+5830 Intercom and PA Systems, Except Airborne S9I
+6550 In-Vitro Diagnostic Substances, Reagents, Test Kits and Sets S9M/KX
+9640 Iron and Steel Primary and Semi-finished Products S9I
+9670 Iron and Steel Scrap S9I
+8930 Jams, Jellies and Preserves* S9S/S9P
+9910 Jewelry 7FX/75
+7320 Kitchen Equipment and Appliances S9I
+7330 Kitchen Hand Tools and Utensils 7FX/75
+5355 Knobs and Pointers S9I
+6640 Lab Equipment and Supplies S9G/CX
+3416 Lathes S9G/CX 
+1055 Launchers, Grenade, Rocket and Pyrotechnic S9C/AX 
+1440 Launchers, Guided Missile S9E/TX 
+1045 Launchers, Torpedoes & Depth Charge S9C/AX 
+3510 Laundry and Dry Cleaning Equipment S9I
+8330 Leather S9T/CY
+3645 Leather Tanning and Leather Working Machinery S9G/CX
+IV-31 
+FSC DESCRIPTION SOS RIC 
+9130 Liquid Propulsion and Fuels, Petroleum Base S9F/KY
+6680 Liquid, Gas Flow, Liquid Level and Mechanisms Motion Measuring Instruments S9G/CX
+8820 Live Animals, Not for Food* S9M/KX
+8810 Live Animals, Raised for Food* S9S/S9P 
+2240 Locomotive and Rail Car Access and Components S9I 
+4930 Lubrication and Fuel Dispensing Equipment S9I
+8460 Luggage S9T/CY
+5940 Lugs, Terminals, Terminal Strips S9G/CX
+5510 Lumber and Related Basic Wood Materials S9I
+3470 Machine Shop Sets, Kits and Outfits S9G/CX
+3460 Machine Tool Accessories S9G/CX
+3450 Machinery Tools, Portable S9G/CX
+3419 Machines, Tools Miscellaneous S9G/CX 
+3408 Machining Centers and Way-Type Machine S9G/CX 
+3444 Manual Presses S9G/CX 
+7640 Maps, Atlases, Charts and Globes S9G/CX
+2040 Marine Hardware and Hull Items S9C/AX 
+4220 Marine Lifesaving and Diving Equipment S9I
+3915 Materials Feeders S9I
+3920 Materials Handling Equipment, Nonself-Propelled S9I
+5210 Measuring Tools, Craftsmen's** 6FE/75
+8905 Meat, Poultry and Fish* S9S/S9P
+3443 Mechanisms Presses, Power Driven S9G/CX 
+6515 Med, Surgical Instruments, Equipment and Supplies S9M/KX
+6508 Medicated Cosmetics and Toiletries S9M/KX
+9930 Memorials, Cemeterial and Mortuary Equipment Supplies S9M/KX
+3426 Metal Finishing Equipment S9G/CX 
+3424 Metal Heat Treat and Non-Thermal Treat Equipment S9G/CX 
+5335 Metal Screening S9I
+IV-32 
+FSC DESCRIPTION SOS RIC 
+6660 Meteorological Instruments and Apparatus S9G/CX
+5962 Microcircuits, Electronic S9E/TX
+7670 Microfilm, Processed S9I
+3417 Milling Machine S9G/CX 
+5520 Millwork S9I
+5610 Mineral Construction Materials, Bulk** 7FX/75
+9620 Minerals, Natural and Synthetic S9I
+7042 Mini and Micro Computer Control Devices S9I
+3820 Mining, Rock Drilling, Earth Boring, Related Equipment S9I
+1680 Miscellaneous Aircraft Accessories and Components S9G/CX 
+6350 Miscellaneous Alarm Signal and Security Detection Systems S9I
+6160 Miscellaneous Battery Retaining Fixtures and Liners S9G/CX
+6850 Miscellaneous Chemical Specialties S9G/CX
+5895 Miscellaneous Communication Equipment S9E/TX
+3895 Miscellaneous Construction Equipment S9I
+9440 Miscellaneous Crude Agricultural and Forest Products S9I
+9430 Miscellaneous Crude Animal Products, Inedible S9T/CY
+6150 Miscellaneous Elect Power and Distribution Equipment S9G/CX
+5999 Miscellaneous Electrical and Electronic Components S9E/TX
+2995 Miscellaneous Engine Accessories, Aircraft S9G/CX 
+2895 Miscellaneous Engine and Components S9C/AX 
+9390 Miscellaneous Fabricated Nonmetal Materials S9I
+6099 Miscellaneous Fiber Optic Components S9E/TX
+7195 Miscellaneous Furniture and Fixtures** 3FN/75 
+7290 Miscellaneous Household Commercial Furnishings and Appliances 7FX/75
+9999 Miscellaneous Items S9I
+4940 Miscellaneous Maintenance and Rep Shop Specialized Equipment S9C/AX
+3990 Miscellaneous Materials Handling Equipment S9I
+7490 Miscellaneous Office Machines** 2FY/75
+IV-33 
+FSC DESCRIPTION SOS RIC 
+4540 Miscellaneous Plumbing, Heat and Sanitation Equipment S9I
+5450 Miscellaneous Prefab Structures S9I
+7690 Miscellaneous Printed Matter S9I
+3449 Miscellaneous Secondary Metal Forming and Cutting Machinery S9G/CX 
+3590 Miscellaneous Service and Trade Equipment 7FX/75
+3695 Miscellaneous Specialized Industry Machinery S9G/CX
+2590 Miscellaneous Vehicle Components S9C/AX 
+9160 Miscellaneous Waxes, Oils and Fats S9I
+3438 Miscellaneous Welding Equipment S9G/CX 
+3439 Miscellaneous Welding, Soldering and Brazing Supplies and Accessories S9G/CX 
+2990 Miscellaneous Engine Accessories, Except Aircraft S9C/AX 
+5680 Miscellaneous Construction Materials** 7FX/75
+1290 Miscellaneous Fire Control Equipment S9E/TX 
+7195 Miscellaneous Furniture and Fixtures 3FN/75
+3040 Miscellaneous Power Trans Equipment S9C/AX 
+2090 Miscellaneous Ship Marine Equipment S9C/AX 
+1095 Miscellaneous Weapons S9C/AX 
+4910 Motor Vehicle Maintenance and Rep Shop Specialized Equipment S9C/AX
+2340 Motorcycles, Motor Scooters, and Bicycles FAA/75 
+6105 Motors, Electrical S9G/CX
+4970 Multiple Guided Weapons, Specialized Maintenance and Repair Shop 
+Equipment S9G/CX 
+7710 Musical Instruments** 7FX/75
+7720 Musical Instruments Parts and Accessories 7FX/75
+5315 Nails, Machine Keys and Pins S9I
+6605 Navigational Instruments S9G/CX
+7630 Newspapers and Periodicals S9I
+5855 Night Vision Equipment, Emitted and Reflected Radiation S9E/TX
+6260 Nonelectrical Lighting Fixtures S9I
+9650 Nonferrous Base Metal Refinery and Intermediate Forms S9I
+IV-34 
+FSC DESCRIPTION SOS RIC 
+9680 Nonferrous Metal Scrap S9I
+9450 Nonmetallic Scrap, Except Textile S9I
+5675 Non-Wood Construction, Lumber, and Related Material S9I
+8315 Notions and Apparel Findings S9T/CY
+5310 Nuts and Washers S9I
+7520 Office Devices and Accessories** 2FY/75
+7110 Office Furniture** 3FN/75
+7435 Office Info Systems Equipment** 2FY/75
+7510 Office Supplies** 2FY/75
+7450 Office Type Sound Recording and Reproducing Mach S9I
+9150 Oils and Greases: Cutting, Lubricating, and Hydraulic S9G/CX
+6930 Operation Training Devices S9I
+6540 Ophthalmic Instruments, Equipment and Supplies S9M/KX
+6650 Optical Instruments, Test Equipment, Components and Accessories S9G/CX
+6008 Optical Multiplexers/Demultiplexers S9E/TX
+6029 Optical Repeaters S9E/TX
+1240 Optical Sight and Range Equipment S9E/TX 
+5980 Optoelectronic Devices and Assoc Hardware S9E/TX
+9610 Ores S9I
+5331 O-Rings S9I 
+5955 Oscillators, Piezoelectric Crystals S9E/TX
+5811 Other Cryptologic Equipment and Components S9E/TX
+8405 Outerwear, Men S9T/CY
+8410 Outerwear, Women S9T/CY
+8135 Packaging and Packing Bulk Materials** 2FY/75
+5330 Packing and Gasket Materials S9I
+8320 Padding and Stuffing Materials S9T/CY
+8020 Paint and Artists' Brushes** 6FE/75
+8010 Paints, Dopes, Varnishes and Related** 6FE/75
+IV-35 
+FSC DESCRIPTION SOS RIC 
+9310 Paper and Paperboard 2FY/75
+1670 Parachutes; Aerial Pick Up, Delivery, Recovery Systems; and Cargo Tie Down 
+Equipment S9G/CX 
+2310 Passenger Motor Vehicles FAA/75 
+8510 Perfumes, Toilet Preparations and Powders 7FX/75
+8530 Personal Toiletry Articles 7FX/75
+6840 Pest Control Agents and Disinfectants S9G/CX
+3740 Pest, Disease, Frost Control Equipment S9G/CX
+3835 Petroleum Production and Distribution Equipment S9I
+7740 Phonograph Records** 7FX/75
+7730 Phonograph, Radio and TVs, Home-type** 7FX/75
+6740 Photo Developing and Finishing Equipment S9I
+6760 Photo Equipment and Accessories S9I
+6730 Photo Projection Equipment S9I
+6780 Photo Sets, Kits, and Outfits S9I
+6750 Photo Supplies S9I
+6635 Physical Properties Testing and Inspection Equipment S9G/CX
+5630 Pipe and Conduit, Nonmetallic** 7FX/75
+4710 Pipe and Tube S9C/AX
+3418 Planers and Shapers S9G/CX 
+9330 Plastics Fabricated Materials S9I
+9535 Plate, Sheet, Strip and Foil: Nonferrous Base Metal S9I
+9515 Plate, Sheet, Strip, Foil and Leaf S9I
+9545 Plate, Sheet, Strip, Foil, and Wire: Precious Metal S9I
+4510 Plumbing Fixtures and Accessories S9I
+5530 Plywood and Veneer S9I
+4320 Power and Hand Pumps S9C/AX
+9660 Precious Metals Primary Forms S9I
+5410 Prefabricated Portable Buildings S9I
+5445 Prefabricated Tower Structures S9I
+IV-36 
+FSC DESCRIPTION SOS RIC 
+8030 Preservative and Sealing Compounds** 6FE/75
+6685 Pressure, Temp, and Humidity Measurement and Control Instruments S9G/CX
+3610 Print, Duplicating, and Bookbinding Equipment S9G/CX
+3465 Production Jigs, Fixtures and Templates S9G/CX
+3615 Pulp and Paper Industries Machinery S9G/CX
+7040 Punched Card Equipment S9I
+3445 Punching and Shearing Machinery S9G/CX 
+5841 Radar Equipment, Airborne S9G/CX
+5840 Radar Equipment, Except Airborne S9E/TX
+5825 Radio and Navigation Equipment, Except Airborne S9E/TX
+5821 Radio and TV Communications Equipment, Airborne S9G/CX
+5820 Radio and TV Communications Equipment, Except Airborne S9E/TX
+5826 Radio Navigation Equipment, Airborne S9G/CX
+6330 Railroad Signal and Warning Devices S9I
+7830 Recreation and Gym Equipment 7FX/75
+4250 Recycling and Reclamation Equipment S9G/CX
+8130 Reels and Spools S9I
+9350 Refractories and Fire Surfacing Materials S9I
+4130 Refrigeration and Air Conditioning Components S9I
+4110 Refrigeration Equipment S9I
+5945 Relays, Solenoids S9E/TX
+6545 Replenishable Field Med Sets, Kits and Outfits S9M/KX
+5905 Resistors S9E/TX
+2020 Rigging and Rigging Gear S9C/AX 
+2230 Right-of-Way Construction and Maintenance Equipment, Railroad S9I 
+5411 Rigid Wall Shelters S9I
+3448 Riveting Machinery S9G/CX 
+5320 Rivets S9I
+3825 Road Clearing and Cleaning Equipment S9I
+IV-37 
+FSC DESCRIPTION SOS RIC 
+2845 Rocket Engine and Components S9G/CX 
+4927 Rocket Maintenance, Rep and Checkout Specialized Equipment S9G/CX
+3422 Rolling Mills and Drawing Machines S9G/CX 
+5650 Roofing and Siding Materials** 7FX/75
+3620 Rubber and Plastics Working Machinery S9G/CX
+9320 Rubber Fabricated Materials S9I
+3770 Saddlery, Harness, Whips, Related Animal Furnishings S9I
+4240 Safety and Rescue Equipment S9I
+3210 Sawmill and Planing Mill Machinery S9I 
+3405 Saws and Filing Machine S9G/CX 
+5440 Scaffold Equipment and Concrete Forms S9I
+6670 Scales and Balances S9G/CX
+5305 Screws S9I
+8730 Seeds and Nursery Stock** 7FX/75
+5961 Semiconductor Devices and Associated Hardware S9E/TX
+5280 Sets, Kits and Outfits of Measuring Tools S9I
+7360 Sets, Kits, Outfits and Modules, Food Preparation and Serving S9I
+4630 Sewage Treatment Equipment S9I
+7660 Sheet and Book Music S9I
+2010 Ship and Boat Propulsion Components S9C/AX 
+6320 Shipboard Alarm and Signal Systems S9G/CX
+8335 Shoe Findings and Soling Materials S9T/CY
+3520 Shoe Repairing Equipment S9I
+9905 Signs, Advertising Displays, Displays, and ID Plates** 7FX/75
+5860 Simulated Coherent Radiation Devices, Components, and Accessories S9E/TX
+9920 Smokers' Articles and Matches 7FX/75
+3710 Soil Preparation Equipment S9I
+6117 Solar Electrical Power Systems S9G/CX
+5835 Sound Recording and Reproducing Equipment S9I
+IV-38 
+FSC DESCRIPTION SOS RIC 
+8935 Soups and Bouillons* S9S/S9P
+4520 Space Heat Equipment, Domestic Water Heater S9I
+1860 Space Survival Equipment S9G/CX 
+1820 Space Vehicle Components S9G/CX 
+1850 Space Vehicle Handling and Servicing Equipment S9G/CX 
+1840 Space Vehicle Launchers S9G/CX 
+4960 Space Vehicle Maintenance, Rep and Checkout Specialized Equipment S9G/CX
+1830 Space Vehicle Remote Control Systems S9G/CX 
+8475 Spec Flight Clothing and Accessories S9T/CY
+8940 Special Dietary Foods and Food Specialty Preparations* S9S/S9P
+8145 Special Ship and Storage Containers S9I
+3690 Specialized Ammo and Ordnance Machinery and Related Equipment S9G/CX
+5180 Specialized Equipments, Kits, Outfits/Hand Tools 6FE/75
+3685 Specialized Metal Container Manufacturing Machinery and Related Equipment S9G/CX
+3670 Specialized Semiconductor, Microcircuit and Printed Circuit Board 
+Manufacturing Machinery S9G/CX
+7540 Standard Forms** 7FX/75
+7530 Stationery and Record Forms** 2FY/75
+2820 Steam Engine, Reciprocating, and Components S9C/AX 
+2825 Steam Turbines and Components S9C/AX 
+5430 Storage Tanks S9I
+9520 Structural Shapes S9I
+9540 Structural Shapes, Nonferrous Base Metal S9I
+5307 Studs S9I
+8925 Sugar, Confectionery and Nuts* S9S/S9P
+6510 Surgical Dressing Materials S9M/KX
+5930 Switches S9E/TX
+5990 Synchros and Resolvers S9E/TX
+7350 Tableware 7FX/75
+5136 Taps, Dies, Collets, Hand and Machine 6FE/75
+IV-39 
+FSC DESCRIPTION SOS RIC 
+5831 Telecommunications and PA Systems, Airborne S9G/CX
+5805 Telephone and Telegraph Equipment S9I
+5815 Teletype and Facsimile Equipment S9I
+8340 Tents and Tarpaulins S9T/CY
+8305 Textile Fabrics S9T/CY
+3625 Textile Industries Machinery S9G/CX
+6645 Time Measuring Instruments S9G/CX
+2620 Tires and Tubes, Pneumatic, Aircraft S9G/CX 
+3640 Tobacco Manufacturing Machinery S9G/CX
+8975 Tobacco Products S9S/S9P
+8520 Toilet Soap, Shave Prep and Dentifrices 7FX/75
+8540 Toiletry Paper Products 2FY/75
+5140 Tool and Hardware Boxes 6FE/75
+3230 Tools and Attachments for Woodworking Machine S9I 
+7643 Topographic Mapping, Charting, and Geodetic Products (located at Richmond, 
+DSCR-JN) HM8
+4921 Torpedoes Maintenance, Rep, and Checkout Specialized Equipment S9C/AX
+3010 Torque Converters and Speed Changers S9C/AX 
+2250 Track Materials, Railroad S9I 
+2410 Tractors, Full Track, Low Speed S9I 
+2430 Tractors, Track Laying High Speed S9I 
+2420 Tractors, Wheeled S9I 
+6310 Traffic and Transit Signal Systems S9I
+2330 Trailers FAA/75 
+6910 Training Aids S9M/KX
+6120 Transformers, Distribution, and Power Stations S9G/CX
+3830 Truck and Tractor Attachment S9I
+2320 Trucks and Truck Tractors, Wheeled FAA/75 
+2950 TurboSupercharger S9G/CX 
+7430 Typewriters and Office Type Composing Mach** 2FY/75
+IV-40 
+FSC DESCRIPTION SOS RIC 
+5845 Underwater Sound Equipment S9E/TX
+8420 Underwear and Nightwear, Men S9T/CY
+8425 Underwear and Nightwear, Women S9T/CY
+4820 Valves, Nonpowered S9C/AX
+4810 Valves, Powered S9C/AX
+2530 Vehicle Brake, Steer Axle, Wheel and Track Components S9C/AX 
+2510 Vehicle Cab, Body and Frame Structural Components S9C/AX 
+2540 Vehicle Furniture and Accessories S9C/AX 
+2520 Vehicle Power Transmission Components S9C/AX 
+3550 Vending and Coin Operating Machines** 7FX/75
+5836 Video Recording and Reproducing Equipment S9I
+5850 Visible and Invisible Light Communications Equipment S9E/TX
+7460 Visible Record Equipment** 2FY/75
+4150 Vortex Tubes and Other Related Cooling Tubes S9G/CX
+5640 Wallboard, Building Paper, Thermal Insulation Materials** 7FX/75
+3930 Warehouse Trucks and Tractors, Self-Propelled S9I
+4620 Water Distillation Equipment, Marine and Industrial S9C/AX
+4610 Water Purification Equipment S9C/AX
+2830 Water Turbines and Wheels, and Components S9I 
+2541 Weapon Systems Specific Vehicular Accessories S9C/AX 
+4933 Weapons Maintenance and Rep Shop Specialized Equipment S9G/CX
+3436 Welding Positioners and Manipulators S9C/AX 
+3950 Winch, Hoist, Crane, Derrick S9C/AX
+6145 Wire and Cable, Elect S9E/TX
+3447 Wire and Metal Ribbon Form Machinery S9G/CX 
+9505 Wire, Nonelectrical S9I
+9525 Wire, Nonelectrical, Nonferrous Base Metal S9I
+3220 Woodworking Machine S9I 
+3540 Wrapping and Packaging Machines** 7FX/75 
+IV-41 
+FSC DESCRIPTION SOS RIC 
+6525 X-Ray Equipment and Supplies: Medical, Dental, Veterinary S9M/KX
+8310 Yarn and Thread S9T/CY
+** FSCs that are supported by both GSA and DSCP G&I 
+S9C/AX: Defense Supply Center, Columbus (Construction, formerly Defense Construction 
+Supply Center) 
+S9E/TX: Defense Supply Center, Columbus (Electronics, formerly Defense Electronics Supply 
+Center) 
+S9G/CX: Defense Supply Center, Richmond, (formerly Defense General Supply Center) 
+HM8: Defense Supply Center, Richmond (Mapping, Charting and Geodetic Products) 
+S9T/CY: Defense Supply Center, Philadelphia (Clothing and Textiles) (formerly Defense 
+Personnel Support Center) 
+S9S: Defense Supply Center, Philadelphia (Subsistence) (formerly Defense Personnel 
+Support Center) 
+S9M/KX: Defense Supply Center, Philadelphia (Medical) (formerly Defense Personnel Support 
+Center) 
+S9I: Former Defense Industrial Supply Center (now part of Defense Supply Center, 
+Philadelphia) 
+S9F/KY: Defense Energy Support Center (formerly Defense Fuel Supply Center) 
+GENERAL SERVICES ADMINISTRATION 
+FAA/75: Vehicle Acquisition and Leasing Service 
+FCX: Services Acquisition Center 
+2FY/75: Office and Supply and Paper Products 
+FCG: Office and Scientific Equipment Acquisition Center 
+3FN/75-CO: National Furniture Center 
+6FE/75: Tools and Appliances Acquisition Center 
+6FR: National Customer Service Center 
+7FX/75: General Products Commodity Center 
+9FT-10: Paints and Chemicals Acquisition Center 
+FCI: Information Technology Acquisition Center 
+IV-42
