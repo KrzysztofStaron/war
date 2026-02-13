@@ -14,6 +14,11 @@ interface FscResultsProps {
   fscCodes: FscResult[];
 }
 
+/** Strip Grok inline citation XML tags from text */
+function stripCitations(text: string): string {
+  return text.replace(/<grok:render[\s\S]*?<\/grok:render>/g, "");
+}
+
 const confidenceStyles: Record<string, string> = {
   high: "border-emerald-600/40 text-emerald-700",
   medium: "border-amber-600/40 text-amber-700",
@@ -49,10 +54,39 @@ function FscCard({ fsc }: { fsc: FscResult }) {
             </span>
           </div>
           <p className="mt-1.5 text-sm leading-relaxed text-foreground/50">
-            {fsc.reason}
+            {stripCitations(fsc.reason)}
           </p>
         </div>
       </div>
+    </div>
+  );
+}
+
+function groupByPrefix(codes: FscResult[]): { prefix: string; items: FscResult[] }[] {
+  const map = new Map<string, FscResult[]>();
+  for (const fsc of codes) {
+    const prefix = fsc.code.slice(0, 2);
+    const group = map.get(prefix);
+    if (group) {
+      group.push(fsc);
+    } else {
+      map.set(prefix, [fsc]);
+    }
+  }
+  return Array.from(map, ([prefix, items]) => ({ prefix, items }));
+}
+
+function GroupedCards({ codes }: { codes: FscResult[] }) {
+  const groups = groupByPrefix(codes);
+  return (
+    <div className="space-y-4">
+      {groups.map((group) => (
+        <div key={group.prefix} className="space-y-1">
+          {group.items.map((fsc) => (
+            <FscCard key={fsc.code} fsc={fsc} />
+          ))}
+        </div>
+      ))}
     </div>
   );
 }
@@ -73,7 +107,7 @@ export function FscResults({ companyDescription, fscCodes }: FscResultsProps) {
           <div className="h-px flex-1 bg-foreground/10" />
         </div>
         <p className="text-sm leading-relaxed text-foreground/70">
-          {companyDescription}
+          {stripCitations(companyDescription)}
         </p>
       </div>
 
@@ -92,13 +126,11 @@ export function FscResults({ companyDescription, fscCodes }: FscResultsProps) {
           No FSC codes could be determined.
         </p>
       ) : (
-        <div className="space-y-3">
-          {primaryCodes.map((fsc) => (
-            <FscCard key={fsc.code} fsc={fsc} />
-          ))}
+        <>
+          <GroupedCards codes={primaryCodes} />
 
           {lowCodes.length > 0 && (
-            <div className="pt-2">
+            <div className="pt-2 mt-4">
               <button
                 type="button"
                 onClick={() => setShowLow((prev) => !prev)}
@@ -126,15 +158,13 @@ export function FscResults({ companyDescription, fscCodes }: FscResultsProps) {
               </button>
 
               {showLow && (
-                <div className="mt-3 space-y-3">
-                  {lowCodes.map((fsc) => (
-                    <FscCard key={fsc.code} fsc={fsc} />
-                  ))}
+                <div className="mt-3">
+                  <GroupedCards codes={lowCodes} />
                 </div>
               )}
             </div>
           )}
-        </div>
+        </>
       )}
     </div>
   );
