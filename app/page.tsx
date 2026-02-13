@@ -31,15 +31,43 @@ export default function Home() {
   ) {
     setIsAnalyzing(true);
     setAnalysisError(null);
-    setAnalysisResult(null);
+    setCurrentStep(1);
 
-    const res = await fetch("/api/analyze", {
+    const fetchResult = await fetch("/api/analyze", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({ company, fileIds }),
-    });
+    }).then(
+      (r) => ({ ok: true as const, value: r }),
+      (err: unknown) => ({
+        ok: false as const,
+        error: err instanceof Error ? err.message : "Network error",
+      })
+    );
 
-    const data = await res.json();
+    if (!fetchResult.ok) {
+      setAnalysisError(fetchResult.error);
+      setIsAnalyzing(false);
+      return;
+    }
+
+    const res = fetchResult.value;
+
+    const parseResult = await res.json().then(
+      (d: AnalysisResult & { error?: string }) => ({
+        ok: true as const,
+        value: d,
+      }),
+      () => ({ ok: false as const, error: "Invalid response from server." })
+    );
+
+    if (!parseResult.ok) {
+      setAnalysisError(parseResult.error);
+      setIsAnalyzing(false);
+      return;
+    }
+
+    const data = parseResult.value;
 
     if (!res.ok) {
       setAnalysisError(data.error ?? "Analysis failed. Please try again.");
@@ -86,19 +114,21 @@ export default function Home() {
 
         {currentStep === 1 && (
           <>
-            <CompanyForm
-              onAnalysisStart={handleAnalysisStart}
-              isAnalyzing={isAnalyzing}
-            />
+            <div className="relative">
+              <CompanyForm
+                onAnalysisStart={handleAnalysisStart}
+                isAnalyzing={isAnalyzing}
+              />
 
-            {isAnalyzing && (
-              <div className="mt-16 flex flex-col items-center gap-4 py-12">
-                <div className="h-6 w-6 animate-spin border-2 border-foreground/20 border-t-primary" />
-                <p className="font-mono text-xs uppercase tracking-[0.2em] text-foreground/40">
-                  Browsing website and analyzing documents...
-                </p>
-              </div>
-            )}
+              {isAnalyzing && (
+                <div className="absolute inset-0 flex flex-col items-center justify-center gap-4 bg-background/80 backdrop-blur-sm">
+                  <div className="h-6 w-6 animate-spin border-2 border-foreground/20 border-t-primary" />
+                  <p className="font-mono text-xs uppercase tracking-[0.2em] text-foreground/40">
+                    Browsing website and analyzing documents...
+                  </p>
+                </div>
+              )}
+            </div>
 
             {analysisError && (
               <div className="mt-8 border-l-4 border-destructive bg-destructive/5 px-4 py-3">

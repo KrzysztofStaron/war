@@ -54,12 +54,40 @@ export function CompanyForm({ onAnalysisStart, isAnalyzing }: CompanyFormProps) 
       formData.append("files", file);
     }
 
-    const res = await fetch("/api/upload", {
+    const fetchResult = await fetch("/api/upload", {
       method: "POST",
       body: formData,
-    });
+    }).then(
+      (r) => ({ ok: true as const, value: r }),
+      (err: unknown) => ({
+        ok: false as const,
+        error: err instanceof Error ? err.message : "Network error",
+      })
+    );
 
-    const data = await res.json();
+    if (!fetchResult.ok) {
+      setError(fetchResult.error);
+      setIsUploading(false);
+      return;
+    }
+
+    const res = fetchResult.value;
+
+    const parseResult = await res.json().then(
+      (d: { files: UploadedFile[]; error?: string }) => ({
+        ok: true as const,
+        value: d,
+      }),
+      () => ({ ok: false as const, error: "Invalid response from server." })
+    );
+
+    if (!parseResult.ok) {
+      setError(parseResult.error);
+      setIsUploading(false);
+      return;
+    }
+
+    const data = parseResult.value;
 
     if (!res.ok) {
       setError(data.error ?? "Upload failed. Please try again.");

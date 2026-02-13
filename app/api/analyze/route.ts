@@ -3,6 +3,25 @@ import { FSC_CODES } from "@/lib/fsc-codes";
 
 const XAI_RESPONSES_URL = "https://api.x.ai/v1/responses";
 
+// In-memory cache: key is a hash of the request inputs, value is the response + timestamp
+const cache = new Map<string, { data: AnalyzeResponse; timestamp: number }>();
+const CACHE_TTL_MS = 1000 * 60 * 60; // 1 hour
+
+function buildCacheKey(company: AnalyzeRequest["company"], fileIds: string[]): string {
+  const normalized = JSON.stringify({
+    name: company.name.trim().toLowerCase(),
+    websiteUrl: (company.websiteUrl ?? "").trim().toLowerCase(),
+    emailDomain: (company.emailDomain ?? "").trim().toLowerCase(),
+    fileIds: [...fileIds].sort(),
+  });
+  // Simple string hash
+  let hash = 0;
+  for (let i = 0; i < normalized.length; i++) {
+    hash = ((hash << 5) - hash + normalized.charCodeAt(i)) | 0;
+  }
+  return String(hash);
+}
+
 interface AnalyzeRequest {
   company: {
     name: string;
@@ -130,14 +149,31 @@ export async function POST(request: Request) {
     );
   }
 
-  const body: AnalyzeRequest = await request.json();
+  const [bodyError, body] = await request
+    .json()
+    .then(
+      (d: AnalyzeRequest) => [null, d] as const,
+      () => ["Invalid JSON in request body."] as const
+    );
+
+  if (bodyError) {
+    return NextResponse.json({ error: bodyError }, { status: 400 });
+  }
+
   const { company, fileIds } = body;
 
-  if (!company.name) {
+  if (!company?.name) {
     return NextResponse.json(
       { error: "Company name is required." },
       { status: 400 }
     );
+  }
+
+  // Check cache
+  const cacheKey = buildCacheKey(company, fileIds);
+  const cached = cache.get(cacheKey);
+  if (cached && Date.now() - cached.timestamp < CACHE_TTL_MS) {
+    return NextResponse.json(cached.data);
   }
 
   const fscReference = buildFscReference();
@@ -185,7 +221,15 @@ export async function POST(request: Request) {
     );
   }
 
-  const xaiResponse = await res.json();
+  const [jsonError, xaiResponse] = await res.json().then(
+    (d: { output?: Array<{ type: string; content?: Array<{ type: string; text?: string }> }> }) =>
+      [null, d] as const,
+    () => ["Failed to parse xAI response."] as const
+  );
+
+  if (jsonError) {
+    return NextResponse.json({ error: jsonError }, { status: 502 });
+  }
 
   // The responses API returns output as an array of items
   // With structured outputs, the text is guaranteed to be valid JSON matching our schema
@@ -209,12 +253,24 @@ export async function POST(request: Request) {
     );
   }
 
-  const result: AnalyzeResponse = JSON.parse(outputText);
+  const [parseError, result] = await new Promise<AnalyzeResponse>(
+    (resolve) => resolve(JSON.parse(outputText) as AnalyzeResponse)
+  ).then(
+    (d) => [null, d] as const,
+    () => ["Failed to parse analysis output."] as const
+  );
+
+  if (parseError) {
+    return NextResponse.json({ error: parseError }, { status: 502 });
+  }
 
   const confidenceOrder: Record<string, number> = { high: 0, medium: 1, low: 2 };
   result.fscCodes.sort(
     (a, b) => confidenceOrder[a.confidence] - confidenceOrder[b.confidence]
   );
+
+  // Store in cache
+  cache.set(cacheKey, { data: result, timestamp: Date.now() });
 
   return NextResponse.json(result);
 }

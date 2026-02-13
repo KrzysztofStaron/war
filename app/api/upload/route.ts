@@ -18,7 +18,16 @@ export async function POST(request: Request) {
     );
   }
 
-  const formData = await request.formData();
+  const [formError, formData] = await request
+    .formData()
+    .then(
+      (d) => [null, d] as const,
+      () => ["Invalid form data in request."] as const
+    );
+
+  if (formError) {
+    return NextResponse.json({ error: formError }, { status: 400 });
+  }
 
   const companyName = formData.get("companyName") as string | null;
   const websiteUrl = formData.get("websiteUrl") as string | null;
@@ -63,7 +72,14 @@ export async function POST(request: Request) {
       );
     }
 
-    const xaiFile: XaiFileResponse = await res.json();
+    const [xaiParseError, xaiFile] = await res.json().then(
+      (d: XaiFileResponse) => [null, d] as const,
+      () => [`Failed to parse xAI response for "${file.name}".`] as const
+    );
+
+    if (xaiParseError) {
+      return NextResponse.json({ error: xaiParseError }, { status: 502 });
+    }
 
     uploadedFiles.push({
       name: xaiFile.filename,
