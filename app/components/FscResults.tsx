@@ -1,3 +1,7 @@
+"use client";
+
+import { useState } from "react";
+
 interface FscResult {
   code: string;
   title: string;
@@ -22,7 +26,43 @@ const confidenceBg: Record<string, string> = {
   low: "bg-foreground/2",
 };
 
+function FscCard({ fsc }: { fsc: FscResult }) {
+  return (
+    <div
+      className={`border-2 border-foreground/10 p-5 transition-colors hover:border-primary/20 ${confidenceBg[fsc.confidence] ?? ""}`}
+    >
+      <div className="flex items-start gap-4">
+        <div className="shrink-0">
+          <span className="font-mono text-2xl font-bold tracking-tight text-foreground">
+            {fsc.code}
+          </span>
+        </div>
+        <div className="min-w-0 flex-1">
+          <div className="flex items-center gap-3">
+            <h3 className="text-sm font-semibold text-foreground/85">
+              {fsc.title}
+            </h3>
+            <span
+              className={`shrink-0 border px-2 py-0.5 font-mono text-[10px] uppercase tracking-wider ${confidenceStyles[fsc.confidence] ?? ""}`}
+            >
+              {fsc.confidence}
+            </span>
+          </div>
+          <p className="mt-1.5 text-sm leading-relaxed text-foreground/50">
+            {fsc.reason}
+          </p>
+        </div>
+      </div>
+    </div>
+  );
+}
+
 export function FscResults({ companyDescription, fscCodes }: FscResultsProps) {
+  const [showLow, setShowLow] = useState(false);
+
+  const primaryCodes = fscCodes.filter((fsc) => fsc.confidence !== "low");
+  const lowCodes = fscCodes.filter((fsc) => fsc.confidence === "low");
+
   return (
     <div className="mt-16">
       <div className="mb-8">
@@ -53,35 +93,47 @@ export function FscResults({ companyDescription, fscCodes }: FscResultsProps) {
         </p>
       ) : (
         <div className="space-y-3">
-          {fscCodes.map((fsc) => (
-            <div
-              key={fsc.code}
-              className={`border-2 border-foreground/10 p-5 transition-colors hover:border-primary/20 ${confidenceBg[fsc.confidence] ?? ""}`}
-            >
-              <div className="flex items-start gap-4">
-                <div className="shrink-0">
-                  <span className="font-mono text-2xl font-bold tracking-tight text-foreground">
-                    {fsc.code}
-                  </span>
-                </div>
-                <div className="min-w-0 flex-1">
-                  <div className="flex items-center gap-3">
-                    <h3 className="text-sm font-semibold text-foreground/85">
-                      {fsc.title}
-                    </h3>
-                    <span
-                      className={`shrink-0 border px-2 py-0.5 font-mono text-[10px] uppercase tracking-wider ${confidenceStyles[fsc.confidence] ?? ""}`}
-                    >
-                      {fsc.confidence}
-                    </span>
-                  </div>
-                  <p className="mt-1.5 text-sm leading-relaxed text-foreground/50">
-                    {fsc.reason}
-                  </p>
-                </div>
-              </div>
-            </div>
+          {primaryCodes.map((fsc) => (
+            <FscCard key={fsc.code} fsc={fsc} />
           ))}
+
+          {lowCodes.length > 0 && (
+            <div className="pt-2">
+              <button
+                type="button"
+                onClick={() => setShowLow((prev) => !prev)}
+                className="group flex w-full items-center gap-3 text-left"
+              >
+                <div className="h-px flex-1 bg-foreground/10" />
+                <span className="shrink-0 font-mono text-[11px] uppercase tracking-[0.2em] text-foreground/30 transition-colors group-hover:text-foreground/50">
+                  {showLow ? "Hide" : "Show"} {lowCodes.length} low confidence
+                  {lowCodes.length === 1 ? "" : " results"}
+                </span>
+                <svg
+                  className={`h-3.5 w-3.5 shrink-0 text-foreground/30 transition-transform group-hover:text-foreground/50 ${showLow ? "rotate-180" : ""}`}
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                  strokeWidth={2}
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    d="M19 9l-7 7-7-7"
+                  />
+                </svg>
+                <div className="h-px flex-1 bg-foreground/10" />
+              </button>
+
+              {showLow && (
+                <div className="mt-3 space-y-3">
+                  {lowCodes.map((fsc) => (
+                    <FscCard key={fsc.code} fsc={fsc} />
+                  ))}
+                </div>
+              )}
+            </div>
+          )}
         </div>
       )}
     </div>

@@ -24,13 +24,47 @@ interface AnalyzeResponse {
   fscCodes: FscResult[];
 }
 
+const ANALYZE_RESPONSE_SCHEMA = {
+  type: "object",
+  properties: {
+    companyDescription: {
+      type: "string",
+      description: "Brief 2-3 sentence description of what the company does",
+    },
+    fscCodes: {
+      type: "array",
+      items: {
+        type: "object",
+        properties: {
+          code: {
+            type: "string",
+            description: "4-digit FSC code from the reference list",
+          },
+          title: {
+            type: "string",
+            description: "Exact title from the FSC reference list",
+          },
+          reason: {
+            type: "string",
+            description: "Brief explanation of why this code is relevant",
+          },
+          confidence: {
+            type: "string",
+            enum: ["high", "medium", "low"],
+            description: "Confidence level of the match",
+          },
+        },
+        required: ["code", "title", "reason", "confidence"],
+        additionalProperties: false,
+      },
+    },
+  },
+  required: ["companyDescription", "fscCodes"],
+  additionalProperties: false,
+} as const;
+
 function buildFscReference(): string {
   return FSC_CODES.map((c) => `${c.code} - ${c.title}`).join("\n");
-}
-
-function extractDomain(url: string): string | null {
-  const match = url.match(/^https?:\/\/(?:www\.)?([^/]+)/);
-  return match ? match[1] : null;
 }
 
 function buildSystemPrompt(fscReference: string): string {
@@ -46,7 +80,7 @@ INSTRUCTIONS:
 5. Return 5-15 FSC codes ranked by relevance.
 
 Consider two of our customers: Company A manufactures light bulbs, while Company B pro-
-duces aircraft landing gear. Clearly, they’re interested in very different contracts. Our job is to
+duces aircraft landing gear. Clearly, they're interested in very different contracts. Our job is to
 filter away the noise and surface only the opportunities that matter to each customer.
 How do we do this? The U.S. federal government classifies every procurement using Federal
 Supply Classification (FSC) codes - 4-digit codes that categorize products and services. If
@@ -54,23 +88,9 @@ we know which FSC codes apply to a company, our matching engine can automaticall
 them to relevant solicitations.
 
 IMPORTANT: You MUST only use codes from the following reference list. Do NOT invent codes.
-
 === FSC REFERENCE LIST ===
 ${fscReference}
-=== END FSC REFERENCE LIST ===
-
-You MUST respond with ONLY a JSON object in this exact format (no markdown fences, no explanation outside the JSON):
-{
-  "companyDescription": "Brief 2-3 sentence description of what the company does",
-  "fscCodes": [
-    {
-      "code": "NNNN",
-      "title": "Exact title from the reference list",
-      "reason": "Brief explanation of why this code is relevant",
-      "confidence": "high" | "medium" | "low"
-    }
-  ]
-}`;
+=== END FSC REFERENCE LIST ===`;
 }
 
 function buildUserContent(
@@ -97,46 +117,8 @@ function buildUserContent(
   return parts;
 }
 
-function buildTools(
-  websiteUrl: string | undefined
-): Array<Record<string, unknown>> {
-  const tools: Array<Record<string, unknown>> = [];
-
-  const webSearchTool: Record<string, unknown> = { type: "web_search" };
-  if (websiteUrl) {
-    const domain = extractDomain(websiteUrl);
-    if (domain) {
-      webSearchTool.web_search = { allowed_domains: [domain] };
-    }
-  }
-  tools.push(webSearchTool);
-
-  return tools;
-}
-
-function parseAnalysisResponse(text: string): AnalyzeResponse {
-  // Try to parse the raw text directly as JSON first
-  const trimmed = text.trim();
-  if (trimmed.startsWith("{")) {
-    return JSON.parse(trimmed) as AnalyzeResponse;
-  }
-
-  // Try to extract JSON from a markdown code fence
-  const fenceMatch = trimmed.match(/```(?:json)?\s*\n?([\s\S]*?)\n?```/);
-  if (fenceMatch) {
-    return JSON.parse(fenceMatch[1]) as AnalyzeResponse;
-  }
-
-  // Try to find any JSON object in the text
-  const jsonMatch = trimmed.match(/\{[\s\S]*\}/);
-  if (jsonMatch) {
-    return JSON.parse(jsonMatch[0]) as AnalyzeResponse;
-  }
-
-  return {
-    companyDescription: "Could not parse the analysis response.",
-    fscCodes: [],
-  };
+function buildTools(): Array<Record<string, unknown>> {
+  return [{ type: "web_search" }];
 }
 
 export async function POST(request: Request) {
@@ -161,10 +143,10 @@ export async function POST(request: Request) {
   const fscReference = buildFscReference();
   const systemPrompt = buildSystemPrompt(fscReference);
   const userContent = buildUserContent(company, fileIds);
-  const tools = buildTools(company.websiteUrl || undefined);
+  const tools = buildTools();
 
   const payload = {
-    model: "grok-4-1-fast-reasoning",
+    model: "grok-4-1-fast-non-reasoning",
     input: [
       {
         role: "developer",
@@ -176,6 +158,14 @@ export async function POST(request: Request) {
       },
     ],
     tools,
+    text: {
+      format: {
+        type: "json_schema",
+        name: "analyze_response",
+        schema: ANALYZE_RESPONSE_SCHEMA,
+        strict: true,
+      },
+    },
   };
 
   const res = await fetch(XAI_RESPONSES_URL, {
@@ -198,7 +188,7 @@ export async function POST(request: Request) {
   const xaiResponse = await res.json();
 
   // The responses API returns output as an array of items
-  // Find the text output
+  // With structured outputs, the text is guaranteed to be valid JSON matching our schema
   let outputText = "";
   if (Array.isArray(xaiResponse.output)) {
     for (const item of xaiResponse.output) {
@@ -219,7 +209,12 @@ export async function POST(request: Request) {
     );
   }
 
-  const result = parseAnalysisResponse(outputText);
+  const result: AnalyzeResponse = JSON.parse(outputText);
+
+  const confidenceOrder: Record<string, number> = { high: 0, medium: 1, low: 2 };
+  result.fscCodes.sort(
+    (a, b) => confidenceOrder[a.confidence] - confidenceOrder[b.confidence]
+  );
 
   return NextResponse.json(result);
 }

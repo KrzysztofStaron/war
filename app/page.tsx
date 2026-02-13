@@ -1,9 +1,10 @@
 "use client";
 
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import Image from "next/image";
 import { CompanyForm } from "./components/CompanyForm";
 import { FscResults, type FscResult } from "./components/FscResults";
+import { StepNav } from "./components/StepNav";
 
 interface AnalysisResult {
   companyDescription: string;
@@ -11,11 +12,18 @@ interface AnalysisResult {
 }
 
 export default function Home() {
+  const [currentStep, setCurrentStep] = useState<1 | 2>(1);
   const [isAnalyzing, setIsAnalyzing] = useState(false);
   const [analysisResult, setAnalysisResult] = useState<AnalysisResult | null>(
     null
   );
   const [analysisError, setAnalysisError] = useState<string | null>(null);
+
+  useEffect(() => {
+    if (analysisResult) {
+      setCurrentStep(2);
+    }
+  }, [analysisResult]);
 
   async function handleAnalysisStart(
     company: { name: string; websiteUrl: string; emailDomain: string },
@@ -69,29 +77,40 @@ export default function Home() {
           </p>
         </div>
 
-        <CompanyForm
-          onAnalysisStart={handleAnalysisStart}
+        <StepNav
+          currentStep={currentStep}
+          canGoToResults={analysisResult !== null}
           isAnalyzing={isAnalyzing}
+          onStepChange={setCurrentStep}
         />
 
-        {isAnalyzing && (
-          <div className="mt-16 flex flex-col items-center gap-4 py-12">
-            <div className="h-6 w-6 animate-spin border-2 border-foreground/20 border-t-primary" />
-            <p className="font-mono text-xs uppercase tracking-[0.2em] text-foreground/40">
-              Browsing website and analyzing documents...
-            </p>
-          </div>
+        {currentStep === 1 && (
+          <>
+            <CompanyForm
+              onAnalysisStart={handleAnalysisStart}
+              isAnalyzing={isAnalyzing}
+            />
+
+            {isAnalyzing && (
+              <div className="mt-16 flex flex-col items-center gap-4 py-12">
+                <div className="h-6 w-6 animate-spin border-2 border-foreground/20 border-t-primary" />
+                <p className="font-mono text-xs uppercase tracking-[0.2em] text-foreground/40">
+                  Browsing website and analyzing documents...
+                </p>
+              </div>
+            )}
+
+            {analysisError && (
+              <div className="mt-8 border-l-4 border-destructive bg-destructive/5 px-4 py-3">
+                <p className="font-mono text-sm text-destructive">
+                  {analysisError}
+                </p>
+              </div>
+            )}
+          </>
         )}
 
-        {analysisError && (
-          <div className="mt-8 border-l-4 border-destructive bg-destructive/5 px-4 py-3">
-            <p className="font-mono text-sm text-destructive">
-              {analysisError}
-            </p>
-          </div>
-        )}
-
-        {analysisResult && (
+        {currentStep === 2 && analysisResult && (
           <FscResults
             companyDescription={analysisResult.companyDescription}
             fscCodes={analysisResult.fscCodes}
