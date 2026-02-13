@@ -2,6 +2,7 @@ import { NextResponse } from "next/server";
 import { FSC_CODES } from "@/lib/fsc-codes";
 
 const XAI_RESPONSES_URL = "https://api.x.ai/v1/responses";
+const SCRAPER_SERVICE_URL = process.env.SCRAPER_SERVICE_URL;
 
 // In-memory cache: key is a hash of the request inputs, value is the response + timestamp
 const cache = new Map<string, { data: AnalyzeResponse; timestamp: number }>();
@@ -174,6 +175,39 @@ export async function POST(request: Request) {
   const cached = cache.get(cacheKey);
   if (cached && Date.now() - cached.timestamp < CACHE_TTL_MS) {
     return NextResponse.json(cached.data);
+  }
+
+  // If website URL and scraper service available, use Puppeteer scraping + keyword matching
+  if (company.websiteUrl?.trim() && SCRAPER_SERVICE_URL) {
+    const scraperUrl = `${SCRAPER_SERVICE_URL.replace(/\/$/, "")}/scrape`;
+    const scrapeRes = await fetch(scraperUrl, {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({ url: company.websiteUrl.trim() }),
+    }).then(
+      (r) => r.json(),
+      () => null
+    );
+
+    if (scrapeRes?.matches?.length > 0) {
+      const fscCodes = scrapeRes.matches.map(
+        (m: { code: string; title: string; reason: string; confidence: string }) => ({
+          code: m.code,
+          title: m.title,
+          reason: m.reason,
+          confidence: m.confidence as "high" | "medium" | "low",
+        })
+      );
+      const companyDescription =
+        scrapeRes.text?.slice(0, 500)?.trim() ||
+        `Company ${company.name} - FSC codes matched from website content.`;
+      const result: AnalyzeResponse = {
+        companyDescription,
+        fscCodes,
+      };
+      cache.set(cacheKey, { data: result, timestamp: Date.now() });
+      return NextResponse.json(result);
+    }
   }
 
   const fscReference = buildFscReference();

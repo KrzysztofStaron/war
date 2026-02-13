@@ -20,6 +20,9 @@
 # production
 /build
 
+# generated (run pnpm run keywords:export to regenerate)
+lib/keywords-data.json
+
 # misc
 .DS_Store
 *.pem

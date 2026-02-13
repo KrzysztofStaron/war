@@ -4,6 +4,10 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
+    "keywords:export": "tsx scripts/export-keywords.ts",
+    "scraper": "cd scraper && pnpm run dev",
+    "scraper:start": "pnpm run keywords:export && cd scraper && pnpm run start",
+    "scraper:setup": "cd scraper && pnpm exec puppeteer browsers install chrome",
     "build": "next build",
     "start": "next start",
     "lint": "eslint"
@@ -19,6 +23,7 @@
     "tailwind-merge": "^3.4.0"
   },
   "devDependencies": {
+    "tsx": "^4.19.2",
     "@tailwindcss/postcss": "^4",
     "@types/node": "^20",
     "@types/react": "^19",
