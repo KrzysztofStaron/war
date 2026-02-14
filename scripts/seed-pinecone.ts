@@ -12,8 +12,6 @@
 import { Pinecone } from "@pinecone-database/pinecone";
 import OpenAI from "openai";
 
-const PINECONE_HOST = "https://codes-xxf6i2m.svc.aped-4627-b74a.pinecone.io";
-
 // Inline FSC_GROUPS to avoid @/ alias issues with tsx
 const FSC_GROUPS: Record<string, { name: string; keywords: string[] }> = {
   "10": { name: "Weapons", keywords: ["weapons", "guns", "firearms", "armament", "ordnance", "military", "defense", "munitions"] },
@@ -121,6 +119,7 @@ async function main() {
   const pineconeApiKey = process.env.PINECONE_API_KEY;
   const openaiApiKey = process.env.OPENAI_API_KEY;
 
+  const indexHost = process.env.PINECONE_INDEX_HOST;
   if (!pineconeApiKey) {
     console.error("PINECONE_API_KEY is not set");
     process.exit(1);
@@ -129,10 +128,14 @@ async function main() {
     console.error("OPENAI_API_KEY is not set");
     process.exit(1);
   }
+  if (!indexHost) {
+    console.error("PINECONE_INDEX_HOST is not set");
+    process.exit(1);
+  }
 
   const openai = new OpenAI({ apiKey: openaiApiKey });
   const pc = new Pinecone({ apiKey: pineconeApiKey });
-  const index = pc.index("codes", PINECONE_HOST);
+  const index = pc.index("codes", indexHost);
 
   const entries = Object.entries(FSC_GROUPS);
   console.log(`Embedding ${entries.length} FSC groups...`);

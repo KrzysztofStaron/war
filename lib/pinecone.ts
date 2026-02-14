@@ -1,7 +1,5 @@
 import { Pinecone } from "@pinecone-database/pinecone";
 
-const GROUPS_INDEX_HOST = "https://codes-xxf6i2m.svc.aped-4627-b74a.pinecone.io";
-
 let pcClient: Pinecone | null = null;
 
 function getClient(): Pinecone {
@@ -31,7 +29,9 @@ export async function queryGroups(
   topK: number = 10,
 ): Promise<GroupMatch[]> {
   const pc = getClient();
-  const index = pc.index("codes", GROUPS_INDEX_HOST);
+  const indexHost = process.env.PINECONE_INDEX_HOST;
+  if (!indexHost) throw new Error("PINECONE_INDEX_HOST is not set");
+  const index = pc.index("codes", indexHost);
 
   const result = await index.query({
     vector: embedding,

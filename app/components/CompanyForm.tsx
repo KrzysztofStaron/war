@@ -45,7 +45,6 @@ export function CompanyForm({ onAnalysisStart, isAnalyzing }: CompanyFormProps) 
 
     setIsUploading(true);
 
-    // Phase 1: Upload files to xAI
     const formData = new FormData();
     formData.append("companyName", companyName);
     formData.append("websiteUrl", websiteUrl);
@@ -100,7 +99,6 @@ export function CompanyForm({ onAnalysisStart, isAnalyzing }: CompanyFormProps) 
     setSelectedFiles([]);
     setIsUploading(false);
 
-    // Phase 2: Trigger analysis
     const allFileIds = [
       ...uploadedFiles.map((f) => f.fileId),
       ...newFiles.map((f) => f.fileId),

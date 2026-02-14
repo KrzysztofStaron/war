@@ -1,36 +1,69 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# SalesPatriot
 
-## Getting Started
+FSC Classification — analyze companies to identify relevant Federal Supply Classification (FSC) codes for federal procurement.
 
-First, run the development server:
+## Setup
 
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+pnpm install
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Create `.env.local` in the project root with:
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+| Variable | Description |
+|----------|-------------|
+| `XAI_API_KEY` | xAI API key (Grok) — used for company research and code selection |
+| `OPENAI_API_KEY` | OpenAI API key — used for embeddings |
+| `PINECONE_API_KEY` | Pinecone API key |
+| `PINECONE_INDEX_HOST` | Pinecone index host URL (e.g. `https://codes-xxx.svc.region.pinecone.io`) |
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## Pinecone Setup
 
-## Learn More
+Create an index named `codes` in your Pinecone project (1024 dimensions, cosine metric). Copy the index host URL to `PINECONE_INDEX_HOST`. Seed the index once:
 
-To learn more about Next.js, take a look at the following resources:
+```bash
+pnpm run keywords:export
+pnpm exec tsx scripts/seed-pinecone.ts
+```
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Run the App
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+```bash
+pnpm dev
+```
 
-## Deploy on Vercel
+Open [http://localhost:3000](http://localhost:3000).
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## Usage
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+1. **Submit** — Enter company name, optional website URL and email domain. Upload PDFs, docs, or other files for context.
+2. **Results** — The app uses Grok to research the company (website + documents), embeds the summary, retrieves relevant FSC groups from Pinecone, then selects specific 4-digit codes. Results include confidence levels and reasons.
+
+## Scripts
+
+| Script | Description |
+|--------|-------------|
+| `pnpm dev` | Start Next.js dev server |
+| `pnpm build` | Production build |
+| `pnpm start` | Run production server |
+| `pnpm run keywords:export` | Export FSC keywords to `lib/keywords-data.json` |
+| `pnpm run scraper` | Run the standalone scraper (dev mode) |
+| `pnpm run scraper:start` | Export keywords + run scraper |
+
+## Scraper (Optional)
+
+Standalone server that scrapes a URL and returns keyword-matched FSC codes. Runs on port 3099 by default (`PORT` env var to override).
+
+```bash
+pnpm run scraper
+# or, to export keywords first:
+pnpm run scraper:start
+```
+
+Install Chrome for Puppeteer:
+
+```bash
+pnpm run scraper:setup
+```
+
+POST to `/scrape` with `{ "url": "https://example.com" }` in the body.

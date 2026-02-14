@@ -5,7 +5,6 @@ import OpenAI from "openai";
 
 const XAI_RESPONSES_URL = "https://api.x.ai/v1/responses";
 
-// In-memory cache: key is a hash of the request inputs, value is the response + timestamp
 const cache = new Map<string, { data: AnalyzeResponse; timestamp: number }>();
 const CACHE_TTL_MS = 1000 * 60 * 60; // 1 hour
 
@@ -43,8 +42,6 @@ interface AnalyzeResponse {
   companyDescription: string;
   fscCodes: FscResult[];
 }
-
-// ---------- Step 1: Company Summary ----------
 
 const SUMMARY_SCHEMA = {
   type: "object",
@@ -98,8 +95,6 @@ function buildUserContent(
   return parts;
 }
 
-// ---------- Step 3: Deep Code Selection ----------
-
 const CODE_SELECTION_SCHEMA = {
   type: "object",
   properties: {
@@ -136,10 +131,6 @@ interface LlmCodePick {
   reason: string;
 }
 
-/**
- * Derive confidence from cosine similarity score (from Pinecone group match).
- * Each code inherits the similarity score of its parent 2-digit group.
- */
 function deriveConfidence(
   groupScoreMap: Map<string, number>,
   code: string,
@@ -175,8 +166,6 @@ IMPORTANT: You MUST only use codes from the following list. Do NOT invent codes.
 ${codeList}
 === END AVAILABLE FSC CODES ===`;
 }
-
-// ---------- Helpers ----------
 
 type XaiOutput = Array<{
   type: string;
@@ -216,8 +205,6 @@ async function embedText(text: string): Promise<number[]> {
   return response.data[0].embedding;
 }
 
-// ---------- Main Handler ----------
-
 export async function POST(request: Request) {
   const xaiKey = process.env.XAI_API_KEY;
   if (!xaiKey) {
@@ -255,15 +242,11 @@ export async function POST(request: Request) {
     );
   }
 
-  // Check cache
   const cacheKey = buildCacheKey(company, fileIds);
   const cached = cache.get(cacheKey);
   if (cached && Date.now() - cached.timestamp < CACHE_TTL_MS) {
     return NextResponse.json(cached.data);
   }
-
-  // ==================== STEP 1: Company Summary ====================
-  // Grok researches the company via web_search + files and produces a summary.
 
   const summaryPayload = {
     model: "grok-4-1-fast-non-reasoning",
@@ -330,27 +313,14 @@ export async function POST(request: Request) {
 
   const companyDescription = summaryResult.companyDescription;
 
-  // ==================== STEP 2: Pinecone Group Retrieval ====================
-  // Embed the summary and query Pinecone for the top 10 relevant FSC groups.
-
   const summaryEmbedding = await embedText(companyDescription);
   const topGroups = await queryGroups(summaryEmbedding, 10);
-
-  // Build group score lookup: prefix -> cosine similarity score from Pinecone
   const groupScoreMap = new Map(topGroups.map((g) => [g.prefix, g.score]));
-
-  // Filter FSC_CODES to only codes within the selected groups
   const selectedPrefixes = new Set(topGroups.map((g) => g.prefix));
   const filteredCodes = FSC_CODES.filter((c) =>
     selectedPrefixes.has(c.code.slice(0, 2)),
   );
-
-  // Fallback: if Pinecone returned nothing, use all codes
   const codesToUse = filteredCodes.length > 0 ? filteredCodes : FSC_CODES;
-
-  // ==================== STEP 3: Deep Code Selection ====================
-  // Grok picks specific codes from the filtered list, with web_search for
-  // additional research.
 
   const codePayload = {
     model: "grok-4-1-fast-non-reasoning",
@@ -421,10 +391,7 @@ export async function POST(request: Request) {
     return NextResponse.json({ error: codeParseErr }, { status: 502 });
   }
 
-  // Validate: only keep codes that were in the filtered set
   const allowedCodeSet = new Set(codesToUse.map((c) => c.code));
-
-  // Derive confidence from Pinecone cosine similarity, not from the LLM
   const scoredCodes: FscResult[] = codeResult.fscCodes
     .filter((c) => allowedCodeSet.has(c.code))
     .map((c) => ({
@@ -433,8 +400,6 @@ export async function POST(request: Request) {
       reason: c.reason,
       confidence: deriveConfidence(groupScoreMap, c.code),
     }));
-
-  // Sort by group similarity score (highest first), then by confidence bucket
   scoredCodes.sort((a, b) => {
     const scoreA = groupScoreMap.get(a.code.slice(0, 2)) ?? 0;
     const scoreB = groupScoreMap.get(b.code.slice(0, 2)) ?? 0;
@@ -445,8 +410,6 @@ export async function POST(request: Request) {
     companyDescription,
     fscCodes: scoredCodes,
   };
-
-  // Store in cache
   cache.set(cacheKey, { data: result, timestamp: Date.now() });
 
   return NextResponse.json(result);
