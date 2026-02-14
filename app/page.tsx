@@ -1,7 +1,7 @@
 "use client";
 
 import { useState, useEffect } from "react";
-import Image from "next/image";
+import { AppHeader } from "./components/AppHeader";
 import { CompanyForm } from "./components/CompanyForm";
 import { FscResults, type FscResult } from "./components/FscResults";
 import { StepNav } from "./components/StepNav";
@@ -82,12 +82,7 @@ export default function Home() {
   return (
     <div className="min-h-screen bg-background px-6 py-16 sm:px-8">
       <div className="mx-auto max-w-2xl">
-        <div className="mb-4 flex items-center gap-3">
-          <Image src="/logo.png" alt="SalesPatriot" width={36} height={36} />
-          <span className="text-lg font-bold tracking-tight text-foreground">
-            SalesPatriot
-          </span>
-        </div>
+        <AppHeader />
 
         <div className="mb-12">
           <p className="font-mono text-xs uppercase tracking-[0.25em] text-muted-foreground mb-4">

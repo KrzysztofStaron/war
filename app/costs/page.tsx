@@ -1,36 +1,37 @@
-import Image from "next/image";
 import Link from "next/link";
+import { AppHeader } from "../components/AppHeader";
 
-const COST_PER_COMPANY = 0.00965;
+const COST_PER_COMPANY = 0.0124;
 
 const costBreakdown = [
   {
-    label: "Grok 4.1 Fast (input tokens)",
+    label: "Grok 4.1 Fast non-reasoning (input)",
     description:
-      "System prompt with FSC reference list (~5,800 tokens) + user message with company details",
-    cost: 0.0029,
-    detail: "~6,000 tokens × $0.48/M input",
+      "2 model calls: summary prompt + code selection prompt with filtered FSC list (~10k tokens total)",
+    cost: 0.002,
+    detail: "~10,000 tokens × $0.20/M input",
   },
   {
     label: "Web search",
-    description: "Browsing company website for products, services, and capabilities",
-    cost: 0.005,
-    detail: "1 search call × $0.005/call",
+    description: "Browsing company website in both summary and code selection steps",
+    cost: 0.01,
+    detail: "2 search calls × $0.005/call",
   },
   {
-    label: "Grok 4.1 Fast (output tokens)",
+    label: "Grok 4.1 Fast non-reasoning (output)",
     description:
-      "Structured JSON with company description and 5–15 FSC codes with reasons",
-    cost: 0.00175,
-    detail: "~500 tokens × $3.50/M output",
+      "Structured JSON from both calls: company description + 5–15 FSC codes with reasons",
+    cost: 0.0004,
+    detail: "~800 tokens × $0.50/M output",
   },
 ] as const;
 
 const assumptions = [
-  "Average input prompt is ~6,000 tokens (system prompt with full FSC code list + company details)",
-  "One web search call per company to browse website content",
-  "Average output is ~500 tokens of structured JSON (company description + 10 FSC codes)",
-  "File uploads to xAI are free and not included in the per-company cost",
+  "Pipeline uses 2 model calls: (1) company summary with web search, (2) FSC code selection with filtered FSC list and web search",
+  "Average input ~10k tokens across both calls (system prompts + FSC reference list + company details)",
+  "Two web search calls per company (one per model step)",
+  "Average output ~800 tokens of structured JSON (company description + FSC codes with reasons)",
+  "File uploads to xAI are free and not included",
   "In-memory caching eliminates cost for repeated lookups of the same company",
 ];
 
@@ -84,14 +85,7 @@ export default function CostsPage() {
   return (
     <div className="min-h-screen bg-background px-6 py-16 sm:px-8">
       <div className="mx-auto max-w-2xl">
-        <div className="mb-4 flex items-center gap-3">
-          <Link href="/" className="flex items-center gap-3 hover:opacity-80 transition-opacity">
-            <Image src="/logo.png" alt="SalesPatriot" width={36} height={36} />
-            <span className="text-lg font-bold tracking-tight text-foreground">
-              SalesPatriot
-            </span>
-          </Link>
-        </div>
+        <AppHeader />
 
         <div className="mb-12">
           <p className="font-mono text-xs uppercase tracking-[0.25em] text-muted-foreground mb-4">
@@ -108,7 +102,6 @@ export default function CostsPage() {
           </p>
         </div>
 
-        {/* Per-company total */}
         <div className="mb-10 border border-foreground/10 bg-card p-6">
           <p className="font-mono text-xs uppercase tracking-[0.2em] text-muted-foreground mb-2">
             Cost per company
@@ -118,7 +111,6 @@ export default function CostsPage() {
           </p>
         </div>
 
-        {/* Breakdown */}
         <div className="mb-12">
           <h2 className="font-mono text-xs uppercase tracking-[0.2em] text-muted-foreground mb-2">
             Line items
@@ -136,7 +128,6 @@ export default function CostsPage() {
           </div>
         </div>
 
-        {/* Scale table */}
         <div className="mb-12">
           <h2 className="font-mono text-xs uppercase tracking-[0.2em] text-muted-foreground mb-4">
             At scale
@@ -148,7 +139,6 @@ export default function CostsPage() {
           </div>
         </div>
 
-        {/* Assumptions */}
         <div className="mb-16">
           <h2 className="font-mono text-xs uppercase tracking-[0.2em] text-muted-foreground mb-4">
             Assumptions
@@ -166,7 +156,6 @@ export default function CostsPage() {
           </ul>
         </div>
 
-        {/* Tech stack */}
         <div className="border-t border-foreground/10 pt-8">
           <h2 className="font-mono text-xs uppercase tracking-[0.2em] text-muted-foreground mb-4">
             Pipeline
@@ -177,6 +166,7 @@ export default function CostsPage() {
               "Web Search",
               "Structured Outputs",
               "File Analysis",
+              "Pinecone + Embeddings",
               "In-Memory Cache",
             ].map((tag) => (
               <span
