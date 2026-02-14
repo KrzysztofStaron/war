@@ -18,6 +18,7 @@ export default function Home() {
     null
   );
   const [analysisError, setAnalysisError] = useState<string | null>(null);
+  const [companyNotFound, setCompanyNotFound] = useState(false);
 
   useEffect(() => {
     if (analysisResult) {
@@ -31,6 +32,7 @@ export default function Home() {
   ) {
     setIsAnalyzing(true);
     setAnalysisError(null);
+    setCompanyNotFound(false);
     setCurrentStep(1);
 
     const fetchResult = await fetch("/api/analyze", {
@@ -54,7 +56,9 @@ export default function Home() {
     const res = fetchResult.value;
 
     const parseResult = await res.json().then(
-      (d: AnalysisResult & { error?: string }) => ({
+      (
+        d: AnalysisResult & { error?: string; notFound?: boolean }
+      ) => ({
         ok: true as const,
         value: d,
       }),
@@ -70,11 +74,13 @@ export default function Home() {
     const data = parseResult.value;
 
     if (!res.ok) {
+      setCompanyNotFound(data.notFound ?? false);
       setAnalysisError(data.error ?? "Analysis failed. Please try again.");
       setIsAnalyzing(false);
       return;
     }
 
+    setCompanyNotFound(false);
     setAnalysisResult(data);
     setIsAnalyzing(false);
   }
@@ -126,10 +132,27 @@ export default function Home() {
             </div>
 
             {analysisError && (
-              <div className="mt-8 border-l-4 border-destructive bg-destructive/5 px-4 py-3">
-                <p className="font-mono text-sm text-destructive">
+              <div
+                className={`mt-8 border-l-4 px-4 py-3 ${
+                  companyNotFound
+                    ? "border-amber-600 bg-amber-600/5"
+                    : "border-destructive bg-destructive/5"
+                }`}
+              >
+                <p
+                  className={`font-mono text-sm ${
+                    companyNotFound ? "text-amber-700" : "text-destructive"
+                  }`}
+                >
                   {analysisError}
                 </p>
+                {companyNotFound && (
+                  <p className="mt-2 text-xs text-foreground/50">
+                    Check that the company name is spelled correctly and the
+                    website URL is valid. Uploading documents with product or
+                    service details can also help.
+                  </p>
+                )}
               </div>
             )}
           </>

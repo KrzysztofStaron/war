@@ -313,6 +313,32 @@ export async function POST(request: Request) {
 
   const companyDescription = summaryResult.companyDescription;
 
+  const notFoundPatterns = [
+    /not\s+found/i,
+    /couldn't?\s+find/i,
+    /unable\s+to\s+find/i,
+    /does\s+not\s+exist/i,
+    /no\s+information\s+(available|found)/i,
+    /could\s+not\s+(find|access|locate|identify)/i,
+    /website\s+(not\s+)?found/i,
+    /unable\s+to\s+access/i,
+    /could\s+not\s+verify/i,
+  ];
+  const looksLikeNotFound =
+    companyDescription.trim().length < 80 ||
+    notFoundPatterns.some((p) => p.test(companyDescription));
+
+  if (looksLikeNotFound) {
+    return NextResponse.json(
+      {
+        error:
+          "Company not found. Please verify the company name and website URL, then try again.",
+        notFound: true,
+      },
+      { status: 404 },
+    );
+  }
+
   const summaryEmbedding = await embedText(companyDescription);
   const topGroups = await queryGroups(summaryEmbedding, 10);
   const groupScoreMap = new Map(topGroups.map((g) => [g.prefix, g.score]));
